@@ -1,0 +1,869 @@
+{
+  "status": "complete",
+  "predictions": [
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 42,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed42_registered_idw_k12.npy",
+      "sha256": "3bf7498734d10863e8abfcd78d994264fe80465f658db46a6ac0ad4e14c2b195",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 42,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed42_registered_nearest_neighbor.npy",
+      "sha256": "6148f6e668e66a858eade9912a253a32d4ad69b2dbe308b01c3ca681382aa1f1",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 42,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed42_anchor_only_calibrated.npy",
+      "sha256": "463ef48c9a22b1a94047e2f42af322ae6130becc02c20a40aac33a6fc8fa925d",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 42,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed42_atlas_plus_global_anchor_residual.npy",
+      "sha256": "7638e3bf049056e00252b197bf23ed4a8d09a3c0ce534457073d0732147f0e6b",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 42,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed42_atlas_plus_local_anchor_residual.npy",
+      "sha256": "e7787fdc8576662691c8b0d62bc9d6bc0b0079c02e7cd4726ec30b13bc0b1ae6",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 42,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed42_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "9ca9e6d832202a2cd5e3338df9fdb658c7ce6870e08ea3acbdaaf2ab8f856774",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 43,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed43_registered_idw_k12.npy",
+      "sha256": "0608b18a2b9f6fb71c0671011c2fc92a16a0c8654dbb62e1fa0be65fc3e7f378",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 43,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed43_registered_nearest_neighbor.npy",
+      "sha256": "6a4e8674ca87a05140e48630959f97535b5e1be75111021cef1250a68c9fc493",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 43,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed43_anchor_only_calibrated.npy",
+      "sha256": "463ef48c9a22b1a94047e2f42af322ae6130becc02c20a40aac33a6fc8fa925d",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 43,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed43_atlas_plus_global_anchor_residual.npy",
+      "sha256": "66ffa6f65630c67c8bacacc7e03a9ac4b212bdd09cfbe7106e28e5b88c48af30",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 43,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed43_atlas_plus_local_anchor_residual.npy",
+      "sha256": "c9e6a1109f6c4b3d17fba8016a3100b3bff189ec8c944c897406fd6f2f3fd76c",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 43,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed43_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "b3c5db99af49068fb11bbba2fea29854b4fc283c94016ff78a39aa8ec75382b5",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 44,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed44_registered_idw_k12.npy",
+      "sha256": "e6b422fcaac69e85444b421e0918a91d7bb8bc90ab4cac7705cfa5f6b13d062e",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 44,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed44_registered_nearest_neighbor.npy",
+      "sha256": "b955066857b03fb593214c767b716f971789a2d2b8468c6069267a5b104dd1b4",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 44,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed44_anchor_only_calibrated.npy",
+      "sha256": "463ef48c9a22b1a94047e2f42af322ae6130becc02c20a40aac33a6fc8fa925d",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 44,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed44_atlas_plus_global_anchor_residual.npy",
+      "sha256": "3555d3cdc0d0e241acf7eb9a48a6ced192778d6017308d16a4a784cc70ac3ea7",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 44,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed44_atlas_plus_local_anchor_residual.npy",
+      "sha256": "161e972f30c7d1faa0320fe64681e5205eed0a0c3ccc7a373c395b8f86470d1e",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E1_to_E2",
+      "seed": 44,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E1_to_E2/predictions/seed44_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "9eaaefedefc9114470220589b494ded3eeef04b93f57c086fc58e25cef036c06",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 42,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed42_registered_idw_k12.npy",
+      "sha256": "d738086b2f512a02843dd416904074fcf8202201b56cd8a55a655291520baee0",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 42,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed42_registered_nearest_neighbor.npy",
+      "sha256": "78fa7efed2bb0d05febfa7ab843e28eed37c246d40e5df0df8d01f30f915c845",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 42,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed42_anchor_only_calibrated.npy",
+      "sha256": "fec0f650e267250883bbbc43effaa90bb025992745e4cd00db68647047d3fce9",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 42,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed42_atlas_plus_global_anchor_residual.npy",
+      "sha256": "7a8c2b3a444e7f075b01271ae005e87f60e646a0f95afb5aff16d1b01c472898",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 42,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed42_atlas_plus_local_anchor_residual.npy",
+      "sha256": "5f694f0e073ccba4f96b20b3ad1e293b0210d66ed58addf0b04ecdb9a513bfb4",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 42,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed42_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "15f04f3f0810886ecce52a4f6402d4ee4a84f6fc3a7c49f9aa2acd068300e5e1",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 43,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed43_registered_idw_k12.npy",
+      "sha256": "11c8275d8863e3eeb606b97f936a56d79744f5d41507a9c3524deb437c2ead8f",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 43,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed43_registered_nearest_neighbor.npy",
+      "sha256": "b887001ed3e1a48318975b0b9481784a81492cb25902623365940308a1250139",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 43,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed43_anchor_only_calibrated.npy",
+      "sha256": "fec0f650e267250883bbbc43effaa90bb025992745e4cd00db68647047d3fce9",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 43,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed43_atlas_plus_global_anchor_residual.npy",
+      "sha256": "b29e1825a62641632aabd3237d4a0621e162dba4d67ce163d78c90188780ef1c",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 43,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed43_atlas_plus_local_anchor_residual.npy",
+      "sha256": "481283d5edc8543c7c5da1a4ec16f3b1b62ebde4c7346860bf56eb220071bb46",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 43,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed43_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "75fe92e96ec215ace7cf9156c8f9ce8e97ed5a4126d3032004795304980a2207",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 44,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed44_registered_idw_k12.npy",
+      "sha256": "0e850727f2364ceff99a054fabd73f10e703abaca31fb479f14f2939deb7ba37",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 44,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed44_registered_nearest_neighbor.npy",
+      "sha256": "ca2d2b931f79d46566f4b8cddd9c4b91d632e034a6357cc19704b4f8cf6533a7",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 44,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed44_anchor_only_calibrated.npy",
+      "sha256": "fec0f650e267250883bbbc43effaa90bb025992745e4cd00db68647047d3fce9",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 44,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed44_atlas_plus_global_anchor_residual.npy",
+      "sha256": "e410e77d8cf334c56ddb329f361430a89689623a018b43c55281d27fb2616735",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 44,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed44_atlas_plus_local_anchor_residual.npy",
+      "sha256": "90e4e0bf5c52c159714130d100e8de3be52fc1207dbb6de1c04e873a6ee54430",
+      "exists": true
+    },
+    {
+      "target_key": "50p_E2_to_E1",
+      "seed": 44,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/50p_E2_to_E1/predictions/seed44_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "0f05aa496fce5d1ac54aab0965d2d5493b0bacfedf69572230e7a13eb10cb87b",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 42,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed42_registered_idw_k12.npy",
+      "sha256": "8b7a8ff77b9673cdd150a4827de2aad1913dfb693caeca67c3a120da1adbd4e5",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 42,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed42_registered_nearest_neighbor.npy",
+      "sha256": "e548b09f630d050a578b96a9dc060333af622fdcd7b6676b891390fd6dc2b85a",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 42,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed42_anchor_only_calibrated.npy",
+      "sha256": "384e97004889a00ec008ac9a48fc7a5c8c4dab37c7ec384032230660dd75fdb0",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 42,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed42_atlas_plus_global_anchor_residual.npy",
+      "sha256": "a18ef5d381d870f541b1b149cedb53c72c24bd636329f54f180b8b7943fe1ade",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 42,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed42_atlas_plus_local_anchor_residual.npy",
+      "sha256": "43b36090f7c40cf2c3cf29f034708cca8e0bc7ebf7cc5ebea5096003a771df9d",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 42,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed42_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "d9042f30ec38c3504adfef4ba866391de2766513eecc1866dd6e6793d69c13e7",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 43,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed43_registered_idw_k12.npy",
+      "sha256": "8dd38fc00e86b0bd032e5c033deff072ac193c27379d82edbafe51070df630ce",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 43,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed43_registered_nearest_neighbor.npy",
+      "sha256": "e1b124f7b90a02e764251fea4fd8177be7af22cdcd4b77b8162a9a1159d09b25",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 43,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed43_anchor_only_calibrated.npy",
+      "sha256": "384e97004889a00ec008ac9a48fc7a5c8c4dab37c7ec384032230660dd75fdb0",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 43,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed43_atlas_plus_global_anchor_residual.npy",
+      "sha256": "ec8102b874877add2b7ace65da5e9ec90c889f0eccff2f8e4c42e01250f44e64",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 43,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed43_atlas_plus_local_anchor_residual.npy",
+      "sha256": "c4cb357c309d3c25a9bb3292457291dd97dd5bffc14e98f25ec6ee4123fa76a8",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 43,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed43_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "9cf5e90f3a44f1b1a7c585a9af8481e0baf292ea4cb10baa324b0d5dbeedc18e",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 44,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed44_registered_idw_k12.npy",
+      "sha256": "0f7957902ecda360a67ab0570ff70d034a2a7ac80e5b9831a0a6a42a7ec6ae98",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 44,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed44_registered_nearest_neighbor.npy",
+      "sha256": "00fb96c09f1d3c4a5a2110b0b52caef309ff4d8b1afbcee4f511752e876c8b9e",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 44,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed44_anchor_only_calibrated.npy",
+      "sha256": "384e97004889a00ec008ac9a48fc7a5c8c4dab37c7ec384032230660dd75fdb0",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 44,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed44_atlas_plus_global_anchor_residual.npy",
+      "sha256": "56e341e09b6411ff956c506d4a7c220b25e2976427d49d74907a3705ce076230",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 44,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed44_atlas_plus_local_anchor_residual.npy",
+      "sha256": "c316088003d5cb15aaed5677cef47e6516e11f4fbc1056e9df9059310931e685",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E1_to_E2",
+      "seed": 44,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_calibrated_20260803_142652/E1_to_E2/predictions/seed44_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "fa4cdf02e78e801205f077f6914f7d52efb80914e4e0ae73a83a1fa9a1fbb8db",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 42,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed42_registered_idw_k12.npy",
+      "sha256": "f6f7b8dc523c1a1bd25a8e30ae3715383ca05ec1fcc23eb09327a1561d22304b",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 42,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed42_registered_nearest_neighbor.npy",
+      "sha256": "558b3727f6ff20b234bd5d0227fa769415d4bf57d21aacb76da3f0095d6f2142",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 42,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed42_anchor_only_calibrated.npy",
+      "sha256": "dea290f11f5f743b72627fb49358a350ef9ac8321b6721c2cd045aa8a2450977",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 42,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed42_atlas_plus_global_anchor_residual.npy",
+      "sha256": "e9000483b1d0c61c935306cbd08916c540c18421be0a6ef81008d45a13f6f897",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 42,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed42_atlas_plus_local_anchor_residual.npy",
+      "sha256": "609d1ffcb5c5f316112f68e54a1fc92cb14bec11c69d2a726812060085a21411",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 42,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed42_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "223493c4523af00fe278ee7b3fd3144f7035e27e6f4f478d4dddbfd6c69e4fd6",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 43,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed43_registered_idw_k12.npy",
+      "sha256": "8b16951b4141a5f1f7929f6c6286610517d692aeacd3a376bbe64e50b30fd02f",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 43,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed43_registered_nearest_neighbor.npy",
+      "sha256": "17f50bc699b6e6da7e5f7708be0e41950820e980f89e06f04e8b57df11f4e8bd",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 43,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed43_anchor_only_calibrated.npy",
+      "sha256": "dea290f11f5f743b72627fb49358a350ef9ac8321b6721c2cd045aa8a2450977",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 43,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed43_atlas_plus_global_anchor_residual.npy",
+      "sha256": "32c81602ab5dd198241f9f83bb46f2bb214ad1bab6387125f4d7149fd4a5d5f4",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 43,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed43_atlas_plus_local_anchor_residual.npy",
+      "sha256": "7100a91d8dab17d6d7215065a8e191601d6735bf35f21195e2e9d6efa08ebada",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 43,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed43_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "925b10e71490cf67ae08930e711ab4d951d221ed74e13f49f73d6395a64e4a5b",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 44,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed44_registered_idw_k12.npy",
+      "sha256": "8ba5eef56698dd762b1c351cb9da5e576aa3854c5134caa64125617e6f72908d",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 44,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed44_registered_nearest_neighbor.npy",
+      "sha256": "2891c3296152dd5fa25757112caabee7e37e81abd7f8159742e8ed718dca504d",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 44,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed44_anchor_only_calibrated.npy",
+      "sha256": "dea290f11f5f743b72627fb49358a350ef9ac8321b6721c2cd045aa8a2450977",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 44,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed44_atlas_plus_global_anchor_residual.npy",
+      "sha256": "af02c42872dc1a6c7197e9b8fe2b0b6cbaa8198f278471834581c7fad076b15e",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 44,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed44_atlas_plus_local_anchor_residual.npy",
+      "sha256": "18486dd193bbcf92c48fddfc122a0088f5f2fc0d52978662b3eb7329193569e8",
+      "exists": true
+    },
+    {
+      "target_key": "75p_E2_to_E1",
+      "seed": 44,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_reciprocal_frozen_20260803_144112/E2_to_E1/predictions/seed44_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "70a356ffe129dd4db1eb8e3c17d7f2c06b70972728bd3bed7769898ece162cf3",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 42,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed42_registered_idw_k12.npy",
+      "sha256": "a613c6fccfaafc9c6c8c5a1d57a58c840ecb26b43a17e15ed4da71346e864935",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 42,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed42_registered_nearest_neighbor.npy",
+      "sha256": "bdc1198065dd57a73f4e52fe9b0907ac5d252f1fc0fd662a377910c5bd3963aa",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 42,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed42_anchor_only_calibrated.npy",
+      "sha256": "87a97d9f8d2ab8010b696974a4001f736f62c008d25e7058b822c9536343b86d",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 42,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed42_atlas_plus_global_anchor_residual.npy",
+      "sha256": "7e98953ecc8763a22d0998a02bfec52ae30fd6d8f9b432033295d7f7f3d6b71a",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 42,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed42_atlas_plus_local_anchor_residual.npy",
+      "sha256": "dd11aeb53fc3e58e5bcf8136705119aea34b2703319679dc9095a9e809463096",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 42,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed42_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "c434a8f27c30235e3baf915a9e87cc731d55cba80cb9edee1b22f75081e5c8fe",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 43,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed43_registered_idw_k12.npy",
+      "sha256": "2f265adfcba0a0ab7bc3346fa431936e25af06c29047304b32715947d4e376cf",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 43,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed43_registered_nearest_neighbor.npy",
+      "sha256": "94f8fb0d97be65b548809d02f79c803525a5971a04a53032445c586b5a482c38",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 43,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed43_anchor_only_calibrated.npy",
+      "sha256": "87a97d9f8d2ab8010b696974a4001f736f62c008d25e7058b822c9536343b86d",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 43,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed43_atlas_plus_global_anchor_residual.npy",
+      "sha256": "b9b2c4da85b896f67f42063fbe71e58b00a4bd222ddcb3846571cab136110951",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 43,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed43_atlas_plus_local_anchor_residual.npy",
+      "sha256": "ff48a21b9fceda99ab014278d829e79991f2c287d3805bee2368d5115dbfe37a",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 43,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed43_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "21be14ec13d7fb0d2f991fbb93a6f38ae3015b584898c618fb2ef0fbb9cf510b",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 44,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed44_registered_idw_k12.npy",
+      "sha256": "cfc8c18a537ee64ba2ecfee671639b0cffd3d14cb62b045cb96b7141526a8fed",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 44,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed44_registered_nearest_neighbor.npy",
+      "sha256": "e5c536af6b984b83c1ff9314058a907e826eadd4833718dd28bbf9dd0feac43e",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 44,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed44_anchor_only_calibrated.npy",
+      "sha256": "87a97d9f8d2ab8010b696974a4001f736f62c008d25e7058b822c9536343b86d",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 44,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed44_atlas_plus_global_anchor_residual.npy",
+      "sha256": "2e8ad7d4cd8481f08780ea25c411e851599b380226de0db96d7e0677e8a84545",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 44,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed44_atlas_plus_local_anchor_residual.npy",
+      "sha256": "a21d6bbe6c67948cc46f1b3d5bc4b63e50245f7cb3e6b2e961be477cddd33732",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E1_to_E2",
+      "seed": 44,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E1_to_E2/predictions/seed44_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "5c618724ca26344c1f7108e12ce171b2cbcd080213f08f950ef1331d388587d5",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 42,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed42_registered_idw_k12.npy",
+      "sha256": "60088900f8f81a30c5973ad38de5870cd82489494ae0b3c620f7dc2c2019c470",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 42,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed42_registered_nearest_neighbor.npy",
+      "sha256": "177068aa7178dbff07f16d70e1231a1d2e082b465e1133cb4ef2356e5fa62ea8",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 42,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed42_anchor_only_calibrated.npy",
+      "sha256": "39417f48d5681580dc23826ec3bcf23b503a3fc4f2398c475eae0b1f29ab125e",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 42,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed42_atlas_plus_global_anchor_residual.npy",
+      "sha256": "7dd51fcc7711f685b9bf69fb55f8210eb427e8d96d1f8766513ede3d1a3e8b81",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 42,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed42_atlas_plus_local_anchor_residual.npy",
+      "sha256": "ad005636fba192dc7fed8d27de84749b7c2758a4a17cfdd5a838d17c813ec28b",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 42,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed42_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "9ccc77760482ff9e7cd7d2729c2e7f0bbfdeee2508e51bf0ad8efb2e7b05a11d",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 43,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed43_registered_idw_k12.npy",
+      "sha256": "c876e742d9701aa954172bece70c7b872e8a316a1be78362c44e54e7738d65bb",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 43,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed43_registered_nearest_neighbor.npy",
+      "sha256": "740982dc1c4ad5e372908e25a37e3a3e0a81349daf8fb05ca1bccc50d6a4a7d1",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 43,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed43_anchor_only_calibrated.npy",
+      "sha256": "39417f48d5681580dc23826ec3bcf23b503a3fc4f2398c475eae0b1f29ab125e",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 43,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed43_atlas_plus_global_anchor_residual.npy",
+      "sha256": "a99edec8f2fba1b39fe815ff82cfe439f37c4b8f2a90709b778a345aaba23066",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 43,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed43_atlas_plus_local_anchor_residual.npy",
+      "sha256": "26cb886af0fe6fa8c6bd1ae0680b3ba4c64ceea103e34a11b6c7b322e8eaccd3",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 43,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed43_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "ea9ab21698c5872c9cbb55c8345f461db4d07e0db1dd382a2509ac0a9b1f8964",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 44,
+      "method": "registered_idw_k12",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed44_registered_idw_k12.npy",
+      "sha256": "db00a73b3fa601647620b10cbc0698e3db1d4c3d00ffb46f90aa932fbe780585",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 44,
+      "method": "registered_nearest_neighbor",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed44_registered_nearest_neighbor.npy",
+      "sha256": "13cd2a181418e1454c32c8c9236eb7b9d61780a0b2bb93e032617f31a5cc4a7a",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 44,
+      "method": "anchor_only_calibrated",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed44_anchor_only_calibrated.npy",
+      "sha256": "39417f48d5681580dc23826ec3bcf23b503a3fc4f2398c475eae0b1f29ab125e",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 44,
+      "method": "atlas_plus_global_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed44_atlas_plus_global_anchor_residual.npy",
+      "sha256": "0e5efee57bb2ef1655784ae85c7c4ef5a74ff231202b5fdea514a60178dfc477",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 44,
+      "method": "atlas_plus_local_anchor_residual",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed44_atlas_plus_local_anchor_residual.npy",
+      "sha256": "362d67268c310986a700df39cf100fbf3d673b2cc208c1d4cae88d0d87b67187",
+      "exists": true
+    },
+    {
+      "target_key": "6s_E2_to_E1",
+      "seed": 44,
+      "method": "hyperspatial_map_calibrated_fusion",
+      "path": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726/04_predictions/6s_E2_to_E1/predictions/seed44_hyperspatial_map_calibrated_fusion.npy",
+      "sha256": "1626465e29c79bbe8d2743529b5bdfd46e75c2485286ceec46c332283dfa389f",
+      "exists": true
+    }
+  ]
+}

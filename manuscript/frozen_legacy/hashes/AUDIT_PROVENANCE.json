@@ -1,0 +1,38 @@
+{
+  "audit": "residual landscape biological audit",
+  "generated_at": "2026-08-05T13:55:59",
+  "frozen_root": "results_v10/hyperspatial_map_cross_stage_frozen_20260803_151726",
+  "frozen_root_modified": false,
+  "targets": [
+    "50p_E1_to_E2",
+    "50p_E2_to_E1",
+    "75p_E1_to_E2",
+    "75p_E2_to_E1",
+    "6s_E1_to_E2",
+    "6s_E2_to_E1"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "reference_seed_for_confound_strata": 42,
+  "predictions_checked": 108,
+  "predictions_verified": 108,
+  "reproduction_checked": 72,
+  "reproduction_passed": 72,
+  "reproduction_tolerance": 1e-05,
+  "max_absolute_reproduction_difference": 5.551115123125783e-17,
+  "annotation_columns_used": [
+    "clusters",
+    "germlayer",
+    "tissue",
+    "type"
+  ],
+  "python": "3.11.11",
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "runtime_seconds": 222.0,
+  "frozen_artifacts_modified": [],
+  "scope": "retrospective characterisation of frozen residual fields; no frozen prediction, registration, anchor list, manifest, figure or decision was modified or recomputed"
+}

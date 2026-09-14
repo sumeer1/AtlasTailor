@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use HyperSpatial-MAP, please cite the software and associated manuscript."
+title: "HyperSpatial-MAP"
+type: software
+version: 0.1.0
+date-released: 2026-08-12
+authors:
+  - name: "HyperSpatial-MAP contributors"
+repository-code: "https://github.com/sumeer1/HyperSpatial-MAP"
+license: BSD-3-Clause
+keywords:
+  - spatial transcriptomics
+  - spatial omics
+  - atlas adaptation
+  - developmental forecasting
+preferred-citation:
+  type: article
+  title: "HyperSpatial-MAP"
+  authors:
+    - name: "Authors to be supplied before release"
+  journal: "Nature Biotechnology"
+  year: 2026

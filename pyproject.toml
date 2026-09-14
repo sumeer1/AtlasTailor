@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyperspatial-map"
+version = "0.1.0"
+description = "Atlas adaptation and developmental forecasting from spatial reference atlases and sparse measurements"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "BSD-3-Clause"
+keywords = ["spatial-transcriptomics", "spatial-omics", "atlas", "bioinformatics"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "anndata>=0.10,<0.13",
+  "h5py>=3.8",
+  "matplotlib>=3.6",
+  "numpy>=1.23,<3",
+  "pandas>=1.5",
+  "pyyaml>=6",
+  "scanpy>=1.9,<2",
+  "scipy>=1.9",
+  "scikit-learn>=1.2",
+  "torch>=2",
+]
+
+[project.optional-dependencies]
+docs = ["mkdocs>=1.5,<2", "mkdocs-material>=9,<10", "mkdocstrings[python]>=0.24,<2"]
+notebooks = ["jupyter>=1", "nbclient>=0.9", "nbformat>=5.9"]
+server = ["fastapi>=0.100", "uvicorn>=0.22"]
+test = ["build>=1", "fastapi>=0.100", "httpx>=0.24", "pytest>=7", "ruff>=0.5", "nbclient>=0.9", "nbformat>=5.9"]
+
+[project.scripts]
+hyperspatial = "hyperspatial.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+  "hyperspatial_molecular_hologram",
+  "hyperspatial_map_t_core_20260804",
+  "hyperspatial_correspondence_transport",
+  "hyperspatial_modelv9",
+  "run_hyperspatial_map_stage1_20260803",
+  "run_hyperspatial_map_stage1b_20260803",
+  "run_molecular_hologram_pilot",
+  "run_mouse_temporal_transport_gate",
+  "run_wemerfish_temporal_holdout",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["hyperspatial*", "analysis*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["regression: requires an external immutable manuscript checkout"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+exclude = ["src/run_*", "src/hyperspatial_molecular_hologram.py", "src/hyperspatial_map_t_core_20260804.py"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]

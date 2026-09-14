@@ -1,0 +1,29 @@
+name: hyperspatial-map-manuscript
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  - numpy=1.26
+  - pandas=2.2
+  - scipy
+  - scikit-learn
+  - h5py
+  - anndata
+  - scanpy
+  - matplotlib
+  - pillow
+  - pyyaml
+  - seaborn
+  - statsmodels
+  - pytorch
+  - pyarrow
+  - openpyxl
+  - jupyterlab
+  - nbclient
+  - pytest
+  - ruff
+  - pip
+  - pip:
+      - -e .[test,docs,notebooks]
+

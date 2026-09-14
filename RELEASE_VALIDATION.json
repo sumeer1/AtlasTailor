@@ -1,0 +1,14 @@
+{
+  "manifest_entries_checked": 402,
+  "required_files": {
+    "count": 8,
+    "missing": []
+  },
+  "manual_final_assemblies": [],
+  "figure_provenance_missing_files": [],
+  "byte_identical_source_failures": [],
+  "generated_source_svg_count": 27,
+  "archived_workflow_file_count": 114,
+  "status": "PASS",
+  "failures": []
+}

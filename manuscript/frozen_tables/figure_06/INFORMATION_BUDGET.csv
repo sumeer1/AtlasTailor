@@ -1,0 +1,3 @@
+Method,Reference expression,Target geometry,16 measured target genes,Perturbation identity,Lesion/context information,Other target information
+HyperSpatial-MAP,"complete sham, 2,003 genes","label-free reconstructed xyz, 10,583 spots",yes; exactly 16,no,no before lock; ICA/PIA only for evaluation,"public gene identifiers; hidden 1,283 genes sealed"
+CONCERT,"complete sham, 2,003 genes",deposited pathology-aligned 3D_pos_PT plus 3D_pos_sham; PT/sham scaled separately,not used as a sparse panel,yes; PT/sham batch and ICA-vs-other attribute,yes; Celltype_coarse ICA labels during training,"complete PT expression for all 2,003 genes, per-spot size factors, learned per-spot basal embeddings; 5% internal validation"

@@ -1,0 +1,85 @@
+{
+  "status": "LOCKED_BEFORE_ANY_PHASE2_TARGET_NONANCHOR_EVALUATION",
+  "locked_at": "2026-08-10T10:45:00+03:00",
+  "classification": "external 2D atlas-adaptation generalization; no target-specific tuning",
+  "pairs": [
+    {"donor": "Br5292", "pair": "Br5292_pos0", "sections": ["151507", "151508"]},
+    {"donor": "Br5292", "pair": "Br5292_pos300", "sections": ["151509", "151510"]},
+    {"donor": "Br5595", "pair": "Br5595_pos0", "sections": ["151669", "151670"]},
+    {"donor": "Br5595", "pair": "Br5595_pos300", "sections": ["151671", "151672"]},
+    {"donor": "Br8100", "pair": "Br8100_pos0", "sections": ["151673", "151674"]},
+    {"donor": "Br8100", "pair": "Br8100_pos300", "sections": ["151675", "151676"]}
+  ],
+  "directions": [
+    "151507_to_151508", "151508_to_151507",
+    "151509_to_151510", "151510_to_151509",
+    "151669_to_151670", "151670_to_151669",
+    "151671_to_151672", "151672_to_151671",
+    "151673_to_151674", "151674_to_151673",
+    "151675_to_151676", "151676_to_151675"
+  ],
+  "coordinates": {
+    "fields": ["pxl_col_in_fullres", "pxl_row_in_fullres"],
+    "units": "full-resolution image pixels",
+    "canonicalization": "per-section median center and 0.99-quantile radial scale",
+    "registration_inputs": "source and target XY only"
+  },
+  "source_gene_rule": "02_frozen_protocol/PROPOSED_SOURCE_ONLY_GENE_RULE.md",
+  "source_cv": {
+    "partition": "four median quadrants, the d=2 analogue of 3D median octants",
+    "training_quadrants": [1, 2],
+    "validation_quadrants": [0, 3],
+    "pseudo_holdout_prediction": "12-NN IDW from the other three quadrants"
+  },
+  "anchors": {
+    "count": 16,
+    "selection": "source-only frozen squared-correlation coverage procedure",
+    "sample_seed": 42116,
+    "maximum_sample_spots": 5000,
+    "maximum_axial_correlation": 0.40
+  },
+  "registration": {
+    "similarity_icp_iterations": 30,
+    "reflection_candidates": ["none", "reflect_x", "reflect_y", "reflect_xy"],
+    "nonrigid_epochs": 30,
+    "batch_size": 768,
+    "seeds": [42, 43, 44],
+    "learning_rate": 0.002,
+    "chamfer_keep": 0.85,
+    "lambda_cycle": 0.2,
+    "lambda_smooth": 0.02,
+    "lambda_fold": 0.2,
+    "compute_device": "CPU; numerical device only, no model change"
+  },
+  "molecular_model": {
+    "idw_k": 12,
+    "local_context_k": 12,
+    "broad_context_k": 32,
+    "rank": 16,
+    "ridge_grid": [0.1, 1.0, 10.0],
+    "gain_grid": [0.25, 0.5, 0.75, 1.0],
+    "fusion_grid": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "guard": "selected source-CV MSE lower than IDW and selected Pearson > IDW Pearson + 0.03",
+    "fallback": "registered 12-NN IDW"
+  },
+  "methods": [
+    "registered_nearest_neighbor",
+    "registered_idw_k12",
+    "atlas_plus_global_anchor_residual",
+    "atlas_plus_local_anchor_residual",
+    "anchor_only_calibrated",
+    "hyperspatial_map_calibrated_fusion"
+  ],
+  "leakage_boundary": {
+    "prediction_target_object": "coordinates, barcodes and exactly 16 requested anchor values",
+    "target_nonanchor_expression": "evaluation-only after all 12 prediction manifests and PREDICTION_HASHES.tsv exist",
+    "target_layers": "evaluation-only after prediction hashes",
+    "target_guided_filtering_selection_or_tuning": false
+  },
+  "reporting_units": {
+    "directional_technical_evaluations": 12,
+    "primary_paired_generalization_units": 6,
+    "independent_biological_sources": 3,
+    "spots_genes_and_gene_target_records": "technical units"
+  }
+}

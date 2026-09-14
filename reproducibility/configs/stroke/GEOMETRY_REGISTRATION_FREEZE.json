@@ -1,0 +1,103 @@
+{
+  "status": "geometry_registration_frozen_before_any_stroke_expression_access",
+  "device": "cuda:0",
+  "epochs": 30,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "source_coordinates": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/16_CONCERT_stroke_geometry_20260820_095543/SHAM_COORDINATES.npy",
+  "source_coordinates_sha256": "0be1f901eb618fa609c5ed35e3954a89580a24b0d8c7b6d978b6d1758daf82cb",
+  "target_coordinates": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/16_CONCERT_stroke_geometry_20260820_095543/STROKE_COORDINATES.npy",
+  "target_coordinates_sha256": "7d7f81e6f1dec9bcaacc463367dbacb2d2b092fc137380a33fbec5010aab1a8c",
+  "source_canonicalization": {
+    "center": [
+      2.2637505531311035,
+      2.969848394393921,
+      1.600000023841858
+    ],
+    "scale": 3.982178609371183
+  },
+  "target_canonicalization": {
+    "center": [
+      2.3318331241607666,
+      4.1223578453063965,
+      1.600000023841858
+    ],
+    "scale": 4.559033536911011
+  },
+  "registration_records": [
+    {
+      "seed": 42,
+      "reflection": "none",
+      "reflection_candidates": {
+        "none": 0.036586845107370855,
+        "reflect_x": 0.20936872819249328,
+        "reflect_y": 0.26903113591588945,
+        "reflect_xy": 0.24407553229901513
+      },
+      "raw_chamfer": 0.0506001941394774,
+      "registered_chamfer": 0.023794239378299324,
+      "runtime_seconds": 8.049918635282665,
+      "final_loss": 0.0020131366327404976,
+      "rigid_chamfer": 0.036586845107370855,
+      "raw_overlap": 0.657505600559391,
+      "rigid_overlap": 0.8439244544676839,
+      "registered_overlap": 0.8795721046623364,
+      "overlap_threshold_canonical": 0.04386889312981474,
+      "mapped_path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed42_registered_source_coordinates.npy",
+      "mapped_sha256": "ae33da9a53a582c7766ae39c81c0f33977a537a60a71491a5979262bc3a65920",
+      "rigid_path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed42_rigid_source_coordinates.npy",
+      "rigid_sha256": "4472a107ca32246cfed7ca9c71ca1cc6515135758d2e0727e050a054010e04ef"
+    },
+    {
+      "seed": 43,
+      "reflection": "none",
+      "reflection_candidates": {
+        "none": 0.036586845107370855,
+        "reflect_x": 0.20936872819249328,
+        "reflect_y": 0.26903113591588945,
+        "reflect_xy": 0.24407553229901513
+      },
+      "raw_chamfer": 0.0506001941394774,
+      "registered_chamfer": 0.024129290660545942,
+      "runtime_seconds": 5.3479921808466315,
+      "final_loss": 0.001901285257190466,
+      "rigid_chamfer": 0.036586845107370855,
+      "raw_overlap": 0.657505600559391,
+      "rigid_overlap": 0.8439244544676839,
+      "registered_overlap": 0.8804439382807636,
+      "overlap_threshold_canonical": 0.04386889312981474,
+      "mapped_path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed43_registered_source_coordinates.npy",
+      "mapped_sha256": "7890b95e25346115f892d104bb643ab4460470aa001a64a4c5a9488a7a0dd6a7",
+      "rigid_path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed43_rigid_source_coordinates.npy",
+      "rigid_sha256": "4472a107ca32246cfed7ca9c71ca1cc6515135758d2e0727e050a054010e04ef"
+    },
+    {
+      "seed": 44,
+      "reflection": "none",
+      "reflection_candidates": {
+        "none": 0.036586845107370855,
+        "reflect_x": 0.20936872819249328,
+        "reflect_y": 0.26903113591588945,
+        "reflect_xy": 0.24407553229901513
+      },
+      "raw_chamfer": 0.0506001941394774,
+      "registered_chamfer": 0.023912513194188224,
+      "runtime_seconds": 5.313733415212482,
+      "final_loss": 0.0019208211451768875,
+      "rigid_chamfer": 0.036586845107370855,
+      "raw_overlap": 0.657505600559391,
+      "rigid_overlap": 0.8439244544676839,
+      "registered_overlap": 0.8804419033394231,
+      "overlap_threshold_canonical": 0.04386889312981474,
+      "mapped_path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed44_registered_source_coordinates.npy",
+      "mapped_sha256": "feb87cd66a4b9141bef68ad4d54de977c16a0444e7911dd798e504e66b6c478e",
+      "rigid_path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed44_rigid_source_coordinates.npy",
+      "rigid_sha256": "4472a107ca32246cfed7ca9c71ca1cc6515135758d2e0727e050a054010e04ef"
+    }
+  ],
+  "runtime_seconds": 27.427997650112957,
+  "target_expression_accessed": false
+}

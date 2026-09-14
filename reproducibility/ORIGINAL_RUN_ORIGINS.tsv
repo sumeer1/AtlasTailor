@@ -1,0 +1,17 @@
+release_scope	original_project_path	status
+Figure 1	results_v10/hyperspatial_map_figure_corrections_20260804_160654	Frozen analysis/render source copied without editing
+Figure 2 present-state	PI_revision/Figure2_external_benchmark_revision_20260817_160248/Final_Figure2v4	Frozen analysis/render source copied without editing
+Figure 2 cross-stage maps	results_v10/hyperspatial_map_figure3_correction_20260804_164109	Frozen analysis/render source copied without editing
+Figure 2/3 all-gene guard	results_v10/supplement_nature_methods_20260809/04_all_gene_results	Frozen source SVG/table copied without editing
+Figure 3 residual landscape	results_v10/hyperspatial_map_residual_landscape_20260805_135217	Frozen analysis/render source copied without editing
+Figure 3 negative-binomial null	PI_revision/S6_NB_null_append_20260818_132918	Frozen analysis/render source copied without editing
+Figure 3 registration robustness	results_v10/supplement_nature_methods_20260809/01_registration_qc_spateo_extension_20260818	Frozen analysis/render source copied without editing
+Figure 3 panel design	results_v10/panel_design_extension_20260809	Frozen analysis/render source copied without editing
+Figure 4	results_v10/hyperspatial_map_figure_corrections_20260804_160654/03_figure4	Frozen analysis/render source copied without editing
+Figure 5 DLPFC	results_v10/hyperspatial_map_2d_dlpfc_20260810_101451	Frozen analysis/render source copied without editing
+Figure 5 SPATCH	PI_revision/25_SPATCH_merged_cross_platform_main_figure_20260825_103003	Frozen analysis/render source copied without editing
+Figure 6 stroke	PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844	Frozen analysis/render source copied without editing
+Figure 6 stroke comparator	PI_revision/18_MAP_vs_CONCERT_stroke_20260820_134558	Frozen analysis/render source copied without editing
+Figure 6 liver aggregate	PI_revision/32_Liver_multidisease_integrated_figure_v9_20260826_162012	Frozen analysis/render source copied without editing
+Figure 6 target-withheld genes	PI_revision/37_Liver_target_withheld_gene_v9style_refinement_20260827_134155	Frozen analysis/render source copied without editing
+Figure 6 corrected MASLD DCN row	PI_revision/37_Liver_target_withheld_gene_v9style_refinement_20260827_134155/Figure_6g_MASLD_DCN_TAT_matched.svg	Frozen source row copied without editing; exact standalone correction renderer was not serialized

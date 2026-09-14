@@ -1,0 +1,73 @@
+target_key	stage	seed	method	frozen_residual_spatial_pearson_median	recomputed_residual_spatial_pearson_median	absolute_difference	reproduced	frozen_predictable_genes	audit_predictable_genes
+50p_E1_to_E2	50% epiboly	42	hyperspatial_map_calibrated_fusion	0.4681335687637329	0.4681335687637329	0.0	True	477	477
+50p_E1_to_E2	50% epiboly	42	anchor_only_calibrated	0.4731674790382385	0.4731674790382385	0.0	True	477	477
+50p_E1_to_E2	50% epiboly	42	atlas_plus_global_anchor_residual	0.3166133165359497	0.3166133165359497	0.0	True	477	477
+50p_E1_to_E2	50% epiboly	42	atlas_plus_local_anchor_residual	0.3031081557273865	0.3031081557273865	0.0	True	477	477
+50p_E1_to_E2	50% epiboly	43	hyperspatial_map_calibrated_fusion	0.4698274433612823	0.46982744336128235	5.551115123125783e-17	True	477	477
+50p_E1_to_E2	50% epiboly	43	anchor_only_calibrated	0.475460946559906	0.475460946559906	0.0	True	477	477
+50p_E1_to_E2	50% epiboly	43	atlas_plus_global_anchor_residual	0.3194038867950439	0.31940388679504395	5.551115123125783e-17	True	477	477
+50p_E1_to_E2	50% epiboly	43	atlas_plus_local_anchor_residual	0.3057249188423157	0.3057249188423157	0.0	True	477	477
+50p_E1_to_E2	50% epiboly	44	hyperspatial_map_calibrated_fusion	0.4735461473464966	0.4735461473464966	0.0	True	477	477
+50p_E1_to_E2	50% epiboly	44	anchor_only_calibrated	0.4795247614383697	0.47952476143836975	5.551115123125783e-17	True	477	477
+50p_E1_to_E2	50% epiboly	44	atlas_plus_global_anchor_residual	0.3256436288356781	0.3256436288356781	0.0	True	477	477
+50p_E1_to_E2	50% epiboly	44	atlas_plus_local_anchor_residual	0.3103396296501159	0.31033962965011597	5.551115123125783e-17	True	477	477
+50p_E2_to_E1	50% epiboly	42	hyperspatial_map_calibrated_fusion	0.4514835774898529	0.4514835774898529	0.0	True	478	478
+50p_E2_to_E1	50% epiboly	42	anchor_only_calibrated	0.4683378338813782	0.4683378338813782	0.0	True	478	478
+50p_E2_to_E1	50% epiboly	42	atlas_plus_global_anchor_residual	0.2770491242408752	0.27704912424087524	5.551115123125783e-17	True	478	478
+50p_E2_to_E1	50% epiboly	42	atlas_plus_local_anchor_residual	0.2751572132110595	0.27515721321105957	5.551115123125783e-17	True	478	478
+50p_E2_to_E1	50% epiboly	43	hyperspatial_map_calibrated_fusion	0.4601966738700866	0.46019667387008667	5.551115123125783e-17	True	478	478
+50p_E2_to_E1	50% epiboly	43	anchor_only_calibrated	0.4762626886367798	0.4762626886367798	0.0	True	478	478
+50p_E2_to_E1	50% epiboly	43	atlas_plus_global_anchor_residual	0.2843826413154602	0.2843826413154602	0.0	True	478	478
+50p_E2_to_E1	50% epiboly	43	atlas_plus_local_anchor_residual	0.2841381728649139	0.28413817286491394	5.551115123125783e-17	True	478	478
+50p_E2_to_E1	50% epiboly	44	hyperspatial_map_calibrated_fusion	0.4583391845226288	0.4583391845226288	0.0	True	478	478
+50p_E2_to_E1	50% epiboly	44	anchor_only_calibrated	0.471791923046112	0.47179192304611206	5.551115123125783e-17	True	478	478
+50p_E2_to_E1	50% epiboly	44	atlas_plus_global_anchor_residual	0.2841358184814453	0.2841358184814453	0.0	True	478	478
+50p_E2_to_E1	50% epiboly	44	atlas_plus_local_anchor_residual	0.2809346318244934	0.2809346318244934	0.0	True	478	478
+75p_E1_to_E2	75% epiboly	42	hyperspatial_map_calibrated_fusion	0.4988933801651001	0.4988933801651001	0.0	True	465	465
+75p_E1_to_E2	75% epiboly	42	anchor_only_calibrated	0.5049644708633423	0.5049644708633423	0.0	True	465	465
+75p_E1_to_E2	75% epiboly	42	atlas_plus_global_anchor_residual	0.3796966075897217	0.3796966075897217	0.0	True	465	465
+75p_E1_to_E2	75% epiboly	42	atlas_plus_local_anchor_residual	0.3891431987285614	0.3891431987285614	0.0	True	465	465
+75p_E1_to_E2	75% epiboly	43	hyperspatial_map_calibrated_fusion	0.496101438999176	0.496101438999176	0.0	True	465	465
+75p_E1_to_E2	75% epiboly	43	anchor_only_calibrated	0.5023730397224426	0.5023730397224426	0.0	True	465	465
+75p_E1_to_E2	75% epiboly	43	atlas_plus_global_anchor_residual	0.3810648322105407	0.38106483221054077	5.551115123125783e-17	True	465	465
+75p_E1_to_E2	75% epiboly	43	atlas_plus_local_anchor_residual	0.3870273530483246	0.3870273530483246	0.0	True	465	465
+75p_E1_to_E2	75% epiboly	44	hyperspatial_map_calibrated_fusion	0.5014379024505615	0.5014379024505615	0.0	True	465	465
+75p_E1_to_E2	75% epiboly	44	anchor_only_calibrated	0.5056275129318237	0.5056275129318237	0.0	True	465	465
+75p_E1_to_E2	75% epiboly	44	atlas_plus_global_anchor_residual	0.3815558552742004	0.38155585527420044	5.551115123125783e-17	True	465	465
+75p_E1_to_E2	75% epiboly	44	atlas_plus_local_anchor_residual	0.3867374956607818	0.38673749566078186	5.551115123125783e-17	True	465	465
+75p_E2_to_E1	75% epiboly	42	hyperspatial_map_calibrated_fusion	0.5266783833503723	0.5266783833503723	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	42	anchor_only_calibrated	0.5266783833503723	0.5266783833503723	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	42	atlas_plus_global_anchor_residual	0.3684181272983551	0.3684181272983551	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	42	atlas_plus_local_anchor_residual	0.359536737203598	0.359536737203598	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	43	hyperspatial_map_calibrated_fusion	0.5344746112823486	0.5344746112823486	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	43	anchor_only_calibrated	0.534169614315033	0.534169614315033	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	43	atlas_plus_global_anchor_residual	0.3763904869556427	0.3763904869556427	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	43	atlas_plus_local_anchor_residual	0.3693052530288696	0.36930525302886963	5.551115123125783e-17	True	467	467
+75p_E2_to_E1	75% epiboly	44	hyperspatial_map_calibrated_fusion	0.5299760103225708	0.5299760103225708	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	44	anchor_only_calibrated	0.5299760103225708	0.5299760103225708	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	44	atlas_plus_global_anchor_residual	0.3699398338794708	0.3699398338794708	0.0	True	467	467
+75p_E2_to_E1	75% epiboly	44	atlas_plus_local_anchor_residual	0.3600316047668457	0.3600316047668457	0.0	True	467	467
+6s_E1_to_E2	6-somite	42	hyperspatial_map_calibrated_fusion	0.5303599834442139	0.5303599834442139	0.0	True	441	441
+6s_E1_to_E2	6-somite	42	anchor_only_calibrated	0.535167932510376	0.535167932510376	0.0	True	441	441
+6s_E1_to_E2	6-somite	42	atlas_plus_global_anchor_residual	0.3412536084651947	0.3412536084651947	0.0	True	441	441
+6s_E1_to_E2	6-somite	42	atlas_plus_local_anchor_residual	0.3272158503532409	0.32721585035324097	5.551115123125783e-17	True	441	441
+6s_E1_to_E2	6-somite	43	hyperspatial_map_calibrated_fusion	0.5328957438468933	0.5328957438468933	0.0	True	441	441
+6s_E1_to_E2	6-somite	43	anchor_only_calibrated	0.5380691885948181	0.5380691885948181	0.0	True	441	441
+6s_E1_to_E2	6-somite	43	atlas_plus_global_anchor_residual	0.3415398001670837	0.34153980016708374	5.551115123125783e-17	True	441	441
+6s_E1_to_E2	6-somite	43	atlas_plus_local_anchor_residual	0.3224810659885406	0.32248106598854065	5.551115123125783e-17	True	441	441
+6s_E1_to_E2	6-somite	44	hyperspatial_map_calibrated_fusion	0.5302521586418152	0.5302521586418152	0.0	True	441	441
+6s_E1_to_E2	6-somite	44	anchor_only_calibrated	0.5367522835731506	0.5367522835731506	0.0	True	441	441
+6s_E1_to_E2	6-somite	44	atlas_plus_global_anchor_residual	0.3428400456905365	0.3428400456905365	0.0	True	441	441
+6s_E1_to_E2	6-somite	44	atlas_plus_local_anchor_residual	0.3256148993968963	0.32561489939689636	5.551115123125783e-17	True	441	441
+6s_E2_to_E1	6-somite	42	hyperspatial_map_calibrated_fusion	0.4881014227867126	0.48810142278671265	5.551115123125783e-17	True	414	414
+6s_E2_to_E1	6-somite	42	anchor_only_calibrated	0.5158635973930359	0.5158635973930359	0.0	True	414	414
+6s_E2_to_E1	6-somite	42	atlas_plus_global_anchor_residual	0.3357582688331604	0.3357582688331604	0.0	True	414	414
+6s_E2_to_E1	6-somite	42	atlas_plus_local_anchor_residual	0.318535715341568	0.318535715341568	0.0	True	414	414
+6s_E2_to_E1	6-somite	43	hyperspatial_map_calibrated_fusion	0.4834109544754028	0.48341095447540283	5.551115123125783e-17	True	414	414
+6s_E2_to_E1	6-somite	43	anchor_only_calibrated	0.5106379389762878	0.5106379389762878	0.0	True	414	414
+6s_E2_to_E1	6-somite	43	atlas_plus_global_anchor_residual	0.3337098062038421	0.33370980620384216	5.551115123125783e-17	True	414	414
+6s_E2_to_E1	6-somite	43	atlas_plus_local_anchor_residual	0.3181968331336975	0.3181968331336975	0.0	True	414	414
+6s_E2_to_E1	6-somite	44	hyperspatial_map_calibrated_fusion	0.4895596802234649	0.48955968022346497	5.551115123125783e-17	True	414	414
+6s_E2_to_E1	6-somite	44	anchor_only_calibrated	0.5165258646011353	0.5165258646011353	0.0	True	414	414
+6s_E2_to_E1	6-somite	44	atlas_plus_global_anchor_residual	0.3361618220806122	0.3361618220806122	0.0	True	414	414
+6s_E2_to_E1	6-somite	44	atlas_plus_local_anchor_residual	0.312280923128128	0.31228092312812805	5.551115123125783e-17	True	414	414

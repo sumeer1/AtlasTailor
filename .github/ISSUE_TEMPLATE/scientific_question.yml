@@ -1,0 +1,8 @@
+name: Scientific question
+description: Ask about interpretation, design or guardrails
+body:
+  - type: textarea
+    id: question
+    attributes: {label: Question, description: State the dataset, workflow and evaluation unit where relevant}
+    validations: {required: true}
+

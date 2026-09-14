@@ -1,0 +1,12 @@
+name: Installation problem
+description: Report an installation or environment problem
+body:
+  - type: textarea
+    id: command
+    attributes: {label: Installation command and output}
+    validations: {required: true}
+  - type: textarea
+    id: system
+    attributes: {label: System, description: OS, Python, CPU/GPU and environment manager}
+    validations: {required: true}
+

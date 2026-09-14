@@ -1,0 +1,12 @@
+dataset_id	role	organism	assay_or_platform	public_record	publication_doi	bundled	important_note
+weMERFISH_zebrafish_3stage	present-state reciprocal reconstruction	Danio rerio	weMERFISH 3D spatial transcriptomics	https://doi.org/10.5061/dryad.j0zpc86v9		no	Verify files against frozen manifests before use.
+weMERFISH_tracking	MAP-T tracking-conditioned forecasting	Danio rerio	TM0-TM230 lineage tracking plus endpoint spatial expression	https://doi.org/10.5061/dryad.j0zpc86v9		no	Intermediate tracking positions are not intermediate molecular ground truth.
+Maynard_DLPFC	2D external generalization	Homo sapiens	10x Genomics Visium	https://doi.org/10.6084/m9.figshare.13623902.v1	https://doi.org/10.1038/s41593-020-00787-0	no	Processed spatialLIBD object and official scale-factor files were used.
+SPATCH	cross-platform serial-section transfer	Homo sapiens	Visium HD FFPE; Xenium 5K; CosMx 6K	https://spatch.pku-genomics.org	https://doi.org/10.1038/s41467-025-64292-3	no	Same-specimen serial sections; no one-to-one cell correspondence assumed.
+mouse_stroke_CONCERT	pathological-state adaptation and CONCERT comparison	Mus musculus	3D spatial transcriptomics	https://doi.org/10.6084/m9.figshare.29882900.v1	https://doi.org/10.1126/scitranslmed.adg1323	no	Processed deposit; original accession CRA006677 / PRJCA009100.
+healthy_liver_M1_M8	common healthy liver reference	Homo sapiens	Visium	https://doi.org/10.5281/zenodo.17735506		no	Eight healthy live-donor references M1-M8.
+MASLD_Visium	MASLD/fibrosis target cohort	Homo sapiens	Visium	https://doi.org/10.48610/e95155f	https://doi.org/10.1016/j.jhepr.2025.101657	no	Visium.zip: 336420009 bytes; MD5 2962d8463da108f9fb9ef951d9204dbd.
+PSC_GSE245620	PSC target	Homo sapiens	Visium	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245620	https://doi.org/10.1016/j.jhep.2023.12.023	no	Four sections from one patient; BioProject PRJNA1029172.
+PSC_GSE240429	healthy same-study sensitivity metadata	Homo sapiens	Visium	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240429	https://doi.org/10.1016/j.jhep.2023.12.023	no	Not the primary reference in the frozen PSC analysis.
+AH_GSE278662	alcohol-associated hepatitis targets	Homo sapiens	Visium	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278662	https://doi.org/10.1111/acer.15494	no	Two independent patients: Sah73 and Sah80.
+

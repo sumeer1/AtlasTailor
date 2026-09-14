@@ -1,0 +1,16 @@
+{
+  "decision": "A",
+  "fraction_genes_MAP_wins_spatial_pearson": 0.9056897895557288,
+  "fraction_genes_MAP_wins_RMSE": 0.93141075604053,
+  "concert_global_scale_factor_to_MAP_depth": 1.0066947681626581,
+  "representative_gene": "Ppp1r1b",
+  "representative_rule": "previously frozen source-only top source-validation Pearson among active-correction hidden genes",
+  "concert_ceiling_fraction": 0.0052161198814081626,
+  "n_clean_hidden_genes": 739,
+  "clean_fraction_MAP_wins_spatial": 0.9025710419485792,
+  "clean_fraction_MAP_wins_RMSE": 0.925575101488498,
+  "clean_MAP_median_spatial": 0.3434016704559326,
+  "clean_CONCERT_median_spatial": 0.07686503976583481,
+  "clean_MAP_median_RMSE": 0.5396928191184998,
+  "clean_CONCERT_median_RMSE": 0.6327937841415405
+}

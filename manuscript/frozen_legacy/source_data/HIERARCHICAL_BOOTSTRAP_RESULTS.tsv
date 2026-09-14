@@ -1,0 +1,15 @@
+comparison	endpoint	estimate	ci95_low	ci95_high	biological_units	inner_units	bootstrap
+HyperSpatial-MAP - registered IDW (favorable sign)	svg_spatial_pearson_median	0.20725936359829378	0.1710399587949117	0.2467231342362033	6	aggregate endpoint	target embryo first
+HyperSpatial-MAP - registered IDW (favorable sign)	auprc_enrichment_median	0.6750566285377019	0.5217300332264702	0.8381064329707556	6	aggregate endpoint	target embryo first
+HyperSpatial-MAP - registered IDW (favorable sign)	topk_dice_median	0.11246300885254441	0.08541482795666377	0.13757671325714493	6	aggregate endpoint	target embryo first
+HyperSpatial-MAP - registered IDW (favorable sign)	weighted_centroid_error_median	0.0061933968817249885	0.0031162949035341003	0.009858431479951186	6	aggregate endpoint	target embryo first
+HyperSpatial-MAP - registered IDW (favorable sign)	spatial_emd_median	0.004520102196915759	0.002586680788578715	0.006673870856788964	6	aggregate endpoint	target embryo first
+HyperSpatial-MAP - registered IDW (favorable sign)	log1p_rmse	0.13050213787290785	0.1136358380317688	0.14736843771404687	6	aggregate endpoint	target embryo first
+HyperSpatial-MAP - registered IDW	spatial_pearson_gene_hierarchical	0.16927890479564667	0.1375055555254221	0.20544271729886532	6	600	target embryo first, then genes
+HyperSpatial-MAP - registered IDW	residual_spatial_pearson_gene_hierarchical	0.49610015749931335	0.4727394424378872	0.5175540417432785	6	2742	target embryo first, then genes
+HyperSpatial-MAP - registered IDW (pair-cluster sensitivity)	svg_spatial_pearson_median	0.20725936359829378	0.15468355516592666	0.23434738814830783	6	3 reciprocal stage pairs	stage-pair cluster first; both embryos retained
+HyperSpatial-MAP - registered IDW (pair-cluster sensitivity)	auprc_enrichment_median	0.6750566285377019	0.5162859900382999	0.9312156722001793	6	3 reciprocal stage pairs	stage-pair cluster first; both embryos retained
+HyperSpatial-MAP - registered IDW (pair-cluster sensitivity)	topk_dice_median	0.11246300885254441	0.09805007598077703	0.14072381162480874	6	3 reciprocal stage pairs	stage-pair cluster first; both embryos retained
+HyperSpatial-MAP - registered IDW (pair-cluster sensitivity)	weighted_centroid_error_median	0.0061933968817249885	0.002411261410121216	0.011336960964152066	6	3 reciprocal stage pairs	stage-pair cluster first; both embryos retained
+HyperSpatial-MAP - registered IDW (pair-cluster sensitivity)	spatial_emd_median	0.004520102196915759	0.0019399313097205328	0.007951328063071968	6	3 reciprocal stage pairs	stage-pair cluster first; both embryos retained
+HyperSpatial-MAP - registered IDW (pair-cluster sensitivity)	log1p_rmse	0.13050213787290785	0.11704218387603754	0.15565223495165503	6	3 reciprocal stage pairs	stage-pair cluster first; both embryos retained

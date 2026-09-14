@@ -1,0 +1,18 @@
+*.h5ad binary
+*.npz binary
+*.npy binary
+*.pdf binary
+*.png binary
+*.svg text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.tsv text eol=lf
+
+# Immutable manuscript evidence and executed workflow snapshots must retain
+# their exact bytes (including historical line endings) after a Git clone.
+manuscript/frozen_legacy/** -text
+manuscript/frozen_tables/** -text
+manuscript/source_panels/** -text
+reproducibility/configs/** -text
+reproducibility/workflows/** -text
+data/checksums/** -text

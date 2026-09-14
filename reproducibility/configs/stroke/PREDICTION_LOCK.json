@@ -1,0 +1,79 @@
+{
+  "status": "predictions_locked_before_hidden_stroke_truth_or_annotations",
+  "methods": {
+    "42": {
+      "registered_idw_k12": {
+        "path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed42_registered_idw_k12.npy",
+        "sha256": "e782831f2ac5b2f926c7db3a012bcae15bbc95e3033ab8f3dc0f095f80b1765f"
+      },
+      "anchor_only_calibrated": {
+        "path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed42_anchor_only_calibrated.npy",
+        "sha256": "ca5febb1647396f7ec8ad398cf24815edaaf6c53934e91c1c04d85756045191e"
+      },
+      "hyperspatial_map_calibrated_fusion": {
+        "path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed42_hyperspatial_map_calibrated_fusion.npy",
+        "sha256": "724719ae6dde79df83183af5a0259322fd8800f332f55c1cf0eba91218c203a6"
+      }
+    },
+    "43": {
+      "registered_idw_k12": {
+        "path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed43_registered_idw_k12.npy",
+        "sha256": "42cb03fbb39284a764391ee2589140aaa0b23ed83683e351d2f61ce0f97036b6"
+      },
+      "anchor_only_calibrated": {
+        "path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed43_anchor_only_calibrated.npy",
+        "sha256": "ca5febb1647396f7ec8ad398cf24815edaaf6c53934e91c1c04d85756045191e"
+      },
+      "hyperspatial_map_calibrated_fusion": {
+        "path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed43_hyperspatial_map_calibrated_fusion.npy",
+        "sha256": "e468a54a151b9cdc4b5025e531b899f5b2660603d6d8284fe5eed58cb0647d4e"
+      }
+    },
+    "44": {
+      "registered_idw_k12": {
+        "path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed44_registered_idw_k12.npy",
+        "sha256": "e743b0aaf763b1eb50981a43a5c28bbe6c390f0ca90e4a887f202b2cec173482"
+      },
+      "anchor_only_calibrated": {
+        "path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed44_anchor_only_calibrated.npy",
+        "sha256": "ca5febb1647396f7ec8ad398cf24815edaaf6c53934e91c1c04d85756045191e"
+      },
+      "hyperspatial_map_calibrated_fusion": {
+        "path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/seed44_hyperspatial_map_calibrated_fusion.npy",
+        "sha256": "365d4f8bdc1c8b63cb46936bb06e7ecdf2c55a51a4500bb70dbfb97dc4da4f82"
+      }
+    }
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "anchor_path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/17_CONCERT_real_stroke_MAP_20260820_100844/LOCKED_PREDICTIONS/TARGET_16_ANCHORS_LOG1P.npy",
+  "anchor_sha256": "012ff3672515d6b5d07f94d4d8311d918f68881eca9549561a75bb13bc2ba90e",
+  "anchor_genes": [
+    "Ctxn1",
+    "Slc17a7",
+    "Mal",
+    "Penk",
+    "Ccdc153",
+    "Ndn",
+    "Fmod",
+    "Prkcd",
+    "Gabra1",
+    "Calml4",
+    "Sparc",
+    "Arpp21",
+    "Baiap3",
+    "Gng8",
+    "Nptxr",
+    "Acta2"
+  ],
+  "target_information_opened": [
+    "frozen xyz",
+    "public gene identifiers",
+    "16 frozen anchor columns"
+  ],
+  "target_hidden_expression_accessed": false,
+  "target_annotations_accessed": false
+}

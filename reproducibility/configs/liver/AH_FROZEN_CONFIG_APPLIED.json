@@ -1,0 +1,172 @@
+{
+  "protocol_id": "LIVER_MULTIDISEASE_HYPERSPATIAL_MAP_POST_MASLD_FREEZE_V1",
+  "protocol_path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/27_Liver_multidisease_frozen_protocol/FROZEN_CONFIG.json",
+  "protocol_sha256": "0cc1c4c9f42809b97cb82df6e9db09e8078344fcad3ca862557a5c62bff5fdd8",
+  "source_model": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/26_HumanLiver_multidisease_MAP_20260825_110222_MASLD/work/healthy_source_model_masld_panel.npz",
+  "source_model_sha256": "28c9c83f77b3c95c285b63e562e6b8d38e44523329976b8d3fefa788d1c130d5",
+  "source_reference": {
+    "description": "healthy live-donor human liver atlas",
+    "repository": "Zenodo 10.5281/zenodo.17735506",
+    "donors": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8"
+    ],
+    "source_validation_donors": [
+      "M2",
+      "M7"
+    ],
+    "source_model_path": "PI_revision/26_HumanLiver_multidisease_MAP_20260825_110222_MASLD/work/healthy_source_model_masld_panel.npz",
+    "source_model_sha256": "28c9c83f77b3c95c285b63e562e6b8d38e44523329976b8d3fefa788d1c130d5"
+  },
+  "anchor_count": 16,
+  "anchors": [
+    "IGFBP1",
+    "VIM",
+    "C7",
+    "ORM1",
+    "NNMT",
+    "MT1M",
+    "FOS",
+    "CYP1A2",
+    "MYL9",
+    "JUND",
+    "IGKC",
+    "SERPINE1",
+    "CD74",
+    "GSTA2",
+    "ADIRF",
+    "SDS"
+  ],
+  "anchor_gene_ids": [
+    "ENSG00000146678",
+    "ENSG00000026025",
+    "ENSG00000112936",
+    "ENSG00000229314",
+    "ENSG00000166741",
+    "ENSG00000205364",
+    "ENSG00000170345",
+    "ENSG00000140505",
+    "ENSG00000101335",
+    "ENSG00000130522",
+    "ENSG00000211592",
+    "ENSG00000106366",
+    "ENSG00000019582",
+    "ENSG00000244067",
+    "ENSG00000148671",
+    "ENSG00000135094"
+  ],
+  "hidden_gene_count": 6814,
+  "registration": {
+    "uses_target_expression": false,
+    "coordinate_canonicalization": "subtract coordinate-wise median and divide by the 0.99 quantile of radial distance",
+    "allowed_reflections": [
+      "none",
+      "reflect_x",
+      "reflect_y",
+      "reflect_xy"
+    ],
+    "similarity_icp_iterations": 30,
+    "reflection_selection": "minimum bidirectional Chamfer distance",
+    "nonrigid_model": "stationary velocity field",
+    "epochs": 30,
+    "learning_rate": 0.002,
+    "batch_size": 768,
+    "chamfer_keep": 0.85,
+    "lambda_cycle": 0.2,
+    "lambda_smooth": 0.02,
+    "lambda_fold": 0.2,
+    "optimizer": "AdamW",
+    "optimizer_weight_decay": 1e-06,
+    "gradient_clip_norm": 5.0,
+    "registration_seeds": [
+      42,
+      43,
+      44
+    ],
+    "primary_seed": 42,
+    "maximum_registration_points_per_side": 5000,
+    "target_support_rule": "nearest registered-source distance no greater than 2.0 times median target nearest-neighbor spacing",
+    "minimum_supported_target_units": 15,
+    "manual_per-disease_tuning": false
+  },
+  "registered_atlas_prior": {
+    "method": "registered inverse-distance weighting",
+    "neighbors": 12,
+    "distance_power": 2,
+    "distance_floor": 1e-05,
+    "manuscript_label": "registered 12-NN IDW",
+    "manuscript_facing_comparator": true,
+    "only_manuscript_facing_comparator": true,
+    "predicted_atlas_relative_residual": "identically zero",
+    "residual_pearson": "undefined; never encode or plot as zero"
+  },
+  "hyperspatial_map": {
+    "architecture": "frozen reduced-rank ridge residual adaptation",
+    "rank": 16,
+    "ridge": 10.0,
+    "gain": 1.0,
+    "raw_residual_features": "16 target-anchor residuals relative to registered IDW",
+    "local_residual_neighbors": 12,
+    "broad_residual_neighbors": 32,
+    "candidate_operators": [
+      "global residual prediction",
+      "local multiscale residual prediction",
+      "anchor-only decoded expression as an internal fusion candidate",
+      "registered-IDW fallback"
+    ],
+    "fusion_weights": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "anchor_only_is_internal": true,
+    "anchor_only_is_benchmark": false
+  },
+  "operator_selection_and_guard": {
+    "selection_unit": "gene",
+    "candidate_error_tolerance": 1.05,
+    "selection_rule": "among candidates within 1.05 times the minimum source-validation MSE, select the highest source-validation spatial Pearson",
+    "guard_rule": "apply the source-selected correction only when selected MSE is lower than IDW MSE and selected Pearson exceeds IDW Pearson by more than 0.03",
+    "fallback": "registered 12-NN IDW",
+    "target_specific_operator_selection": false,
+    "target_specific_calibration": false,
+    "target_specific_guard_tuning": false
+  },
+  "evaluation": {
+    "biological_unit": "patient",
+    "no_pseudoreplication": "spots, genes, biopsies, and sections are not independent biological replicates",
+    "post_lock_spot_qc": "nFeature greater than 10 and mitochondrial percentage less than 10",
+    "post_lock_hidden_gene_qc": "nonzero in more than 3 spots per target array",
+    "metrics": [
+      "median gene-wise spatial Pearson",
+      "log1p RMSE pooled across target units and hidden genes",
+      "median gene-wise atlas-relative residual Pearson",
+      "pooled target-unit-by-gene atlas-relative residual Pearson",
+      "fraction hidden genes with MAP spatial Pearson greater than IDW",
+      "fraction hidden genes with MAP RMSE less than IDW",
+      "fraction hidden genes with positive MAP residual Pearson"
+    ],
+    "residual_definition": {
+      "measured": "target truth minus registered IDW atlas prior",
+      "predicted": "MAP prediction minus registered IDW atlas prior"
+    },
+    "bootstrap": {
+      "unit": "patient",
+      "replicates": 10000,
+      "seed": 260825,
+      "interval": "2.5th and 97.5th percentiles of patient-balanced mean"
+    },
+    "performance_based_exclusion": false
+  },
+  "programs_path": "/home/khansa/Documents/3D-Spatial/Claude/Projects/HyperSpatial_v10/PI_revision/29_Liver_AlcoholHepatitis_MAP_20260825_182254/AH_PROGRAMS.json",
+  "programs_sha256": "a4bc8181ff640f835dea87cceea2926153710d993ece63a730be0962d75417cc",
+  "target_nonanchor_expression_values_materialized_before_lock": 0
+}
