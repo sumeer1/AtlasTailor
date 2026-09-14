@@ -4,11 +4,15 @@
 
 HyperSpatial-MAP is an atlas-adaptation framework for spatial omics. It separates the molecular field expected from registered anatomy from a source-supported, target-specific correction:
 
- ## Manuscript Figure 1
+> registered atlas prior + sparse target adaptation = individualized molecular reconstruction
 
-  [![HyperSpatial-MAP Figure 1](manuscript/source_panels/figure_01/Figure_1_HyperSpatial_MAP_Nature.svg)](manuscript/final_display_figures/Figure_1.pdf)
+This is not conventional within-sample imputation. The reference and target are distinct specimens, sections, stages, or technologies. Geometry-only registration first transfers the reference atlas. A small, prespecified target panel then informs an atlas-relative residual model, while a source-validation guard retains registered 12-nearest-neighbour inverse-distance weighting (IDW) when correction is unsupported.
 
-  [View publication-quality Figure 1 PDF](manuscript/final_display_figures/Figure_1.pdf)
+## Manuscript Figure 1
+
+[![HyperSpatial-MAP Figure 1](manuscript/source_panels/figure_01/Figure_1_HyperSpatial_MAP_Nature.svg)](manuscript/final_display_figures/Figure_1.pdf)
+
+[View publication-quality Figure 1 PDF](manuscript/final_display_figures/Figure_1.pdf)
 
 
 ## Repository scope
@@ -18,7 +22,7 @@ This repository combines two layers:
 1. a reusable Python package with deterministic 2D and 3D examples; and
 2. a manuscript reproducibility record containing the executed workflows, frozen configurations, compact source tables, checksums, and independently generated source-panel SVGs.
 
-The final manuscript layouts were assembled manually in Inkscape and are intentionally **not included**. No combined manuscript Figure 1–6 SVG/PDF/PNG is presented as programmatically generated. See [manuscript provenance](manuscript/README.md).
+A display PDF for Figure 1 is included above. The manually assembled combined layouts for the remaining figures are intentionally **not included**, and no manual assembly is presented as programmatically generated. See [manuscript provenance](manuscript/README.md).
 
 ## Scientific workflow
 

@@ -1,6 +1,6 @@
 # Manuscript computational record
 
-This directory connects the final manuscript narrative to independently generated computational panels without distributing the manually assembled Inkscape masters.
+This directory connects the final manuscript narrative to independently generated computational panels. A Figure 1 display PDF is included for convenience; manually assembled Inkscape masters for the remaining figures are not distributed here.
 
 ## What is included
 
@@ -13,7 +13,7 @@ This directory connects the final manuscript narrative to independently generate
 
 ## What is intentionally excluded
 
-- manually assembled combined main-figure SVG/PDF/PNG files;
+- manually assembled combined main-figure SVG/PDF/PNG files other than the explicitly supplied Figure 1 display PDF;
 - historical layout variants;
 - large raw provider datasets;
 - manuscript-scale prediction arrays;
