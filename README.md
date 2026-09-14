@@ -4,9 +4,12 @@
 
 HyperSpatial-MAP is an atlas-adaptation framework for spatial omics. It separates the molecular field expected from registered anatomy from a source-supported, target-specific correction:
 
-> registered atlas prior + sparse target adaptation = individualized molecular reconstruction
+ ## Manuscript Figure 1
 
-This is not conventional within-sample imputation. The reference and target are distinct specimens, sections, stages, or technologies. Geometry-only registration first transfers the reference atlas. A small, prespecified target panel then informs an atlas-relative residual model, while a source-validation guard retains registered 12-nearest-neighbour inverse-distance weighting (IDW) when correction is unsupported.
+  [![HyperSpatial-MAP Figure 1](manuscript/source_panels/figure_01/Figure_1_HyperSpatial_MAP_Nature.svg)](manuscript/final_display_figures/Figure_1.pdf)
+
+  [View publication-quality Figure 1 PDF](manuscript/final_display_figures/Figure_1.pdf)
+
 
 ## Repository scope
 
