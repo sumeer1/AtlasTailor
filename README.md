@@ -10,7 +10,7 @@ This is not conventional within-sample imputation. The reference and target are 
 
 ## Manuscript Figure 1
 
-[![HyperSpatial-MAP Figure 1](manuscript/source_panels/figure_01/Figure_1_HyperSpatial_MAP_Nature.svg)](manuscript/final_display_figures/Figure_1.pdf)
+[![HyperSpatial-MAP Figure 1](manuscript/final_display_figures/Figure_1_preview.png)](manuscript/final_display_figures/Figure_1.pdf)
 
 [View publication-quality Figure 1 PDF](manuscript/final_display_figures/Figure_1.pdf)
 
