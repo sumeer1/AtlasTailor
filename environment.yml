@@ -1,0 +1,17 @@
+name: hyperspatial-map
+channels: [conda-forge, pytorch]
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - h5py
+  - anndata
+  - matplotlib
+  - pyyaml
+  - pytorch
+  - pip
+  - pip:
+      - -e .[test,docs,notebooks]
+

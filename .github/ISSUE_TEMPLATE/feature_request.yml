@@ -1,0 +1,12 @@
+name: Feature request
+description: Propose a scoped addition without target leakage or silent method changes
+body:
+  - type: textarea
+    id: need
+    attributes: {label: Scientific need}
+    validations: {required: true}
+  - type: textarea
+    id: boundary
+    attributes: {label: Proposed behavior and information exposure}
+    validations: {required: true}
+

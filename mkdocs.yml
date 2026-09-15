@@ -1,0 +1,28 @@
+site_name: HyperSpatial-MAP
+site_description: Atlas adaptation and developmental forecasting from sparse spatial measurements
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quickstart: quickstart.md
+  - Data formats: data_formats.md
+  - Design a panel: design_panel.md
+  - Adapt a specimen: adapt.md
+  - Explore residuals: residuals.md
+  - Forecast: forecast.md
+  - Python API: python_api.md
+  - CLI: cli.md
+  - Scientific guardrails: scientific_guardrails.md
+  - Manuscript overview: manuscript_overview.md
+  - Figure provenance: figure_provenance.md
+  - Statistical units: statistical_units.md
+  - Architecture and provenance: tool_architecture.md
+  - FAQ: faq.md
+  - Release and Zenodo: release_and_zenodo.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]

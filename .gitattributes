@@ -1,0 +1,12 @@
+*.h5ad binary
+*.npz binary
+*.npy binary
+*.pdf binary
+*.png binary
+*.svg text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.tsv text eol=lf
+
+# Preserve compact frozen tutorial evidence exactly.
+examples/figure2_frozen_summary/** -text

@@ -1,0 +1,36 @@
+{
+  "selection": {
+    "primary": "Whole-embryo weMERFISH zebrafish, Dryad 10.5061/dryad.j0zpc86v9",
+    "reason": "True 3D cell coordinates, three stages, two embryos per stage, measured counts, tissue annotations, and independent live-cell correspondences.",
+    "primary_holdout": "50% epiboly + 6-somite -> complete 75% epiboly",
+    "genes": "495 measured genes only",
+    "excluded_from_primary": "25,872 imputed genes",
+    "alignment_ceiling_only": "MERFISH-FATE target correspondences"
+  },
+  "repository": {
+    "doi": "10.5061/dryad.j0zpc86v9",
+    "version_id": 413291,
+    "license": "CC0-1.0",
+    "download_status": "blocked_by_Dryad_AWS_WAF_on_workstation_2026-07-28"
+  },
+  "files": [
+    {"id": 4505734, "name": "weMERFISH_measured_A_50p_E1.h5ad", "bytes": 49024682, "sha256": "8c579f6d1278ec12e17665b6645c892890b29d8e2500cb4a3eecafcafc620884"},
+    {"id": 4505735, "name": "weMERFISH_measured_A_50p_E2.h5ad", "bytes": 65357678, "sha256": "e0a88d080cc5c5750c94ff7e2dfb313f257f1a4beaeae03c76d9a466f7f7c2d6"},
+    {"id": 4505736, "name": "weMERFISH_measured_B_75p_E1.h5ad", "bytes": 93892362, "sha256": "bf0fb07556f700948999b818de83d156f95dc8ecdd7aaa52bdaca0c7b2392434"},
+    {"id": 4505737, "name": "weMERFISH_measured_B_75p_E2.h5ad", "bytes": 88067687, "sha256": "ab33956942d325df380bd51d21f62c132f3a36d0e5a95f0f3cf3b7fed15a7daa"},
+    {"id": 4505738, "name": "weMERFISH_measured_C_6s_E1_rescaled_z.h5ad", "bytes": 372983286, "sha256": "a0ea9d01a7e8a59bfda3876b9a3d0f0aa345d50670c718e79fbb7821cf1ea14b"},
+    {"id": 4505740, "name": "weMERFISH_measured_C_6s_E2_rescaled_z.h5ad", "bytes": 429981148, "sha256": "49249578ca4b09c3b3ffd5ea7abf7d2646c4d14229ef0a017c1cec8f0a757632"}
+  ],
+  "secondary_datasets": [
+    {
+      "name": "Mouse embryo Slide-seq",
+      "doi": "10.1038/s41588-023-01435-6",
+      "use": "Dense mammalian reconstruction/transfer; E9.5 is partial, so not the primary complete-stage test."
+    },
+    {
+      "name": "Flysta3D",
+      "doi": "10.1016/j.devcel.2022.04.006",
+      "use": "Independent complete-volume L1 + L3 -> L2 validation after the primary gate."
+    }
+  ]
+}

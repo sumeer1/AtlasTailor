@@ -1,0 +1,4 @@
+adapt:
+  registration: pre_registered
+  seeds:
+  - 42
