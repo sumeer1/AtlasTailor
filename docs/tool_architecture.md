@@ -1,4 +1,4 @@
-# HyperSpatial-MAP lab toolkit architecture
+# AtlasTailor lab toolkit architecture
 
 ## Evidence boundary
 

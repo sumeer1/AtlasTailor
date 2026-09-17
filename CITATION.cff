@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "If you use HyperSpatial-MAP, please cite the software and associated manuscript."
-title: "HyperSpatial-MAP"
+message: "If you use AtlasTailor, please cite the software and associated manuscript."
+title: "AtlasTailor"
 type: software
 version: 0.1.0
 date-released: 2026-08-12
 authors:
-  - name: "HyperSpatial-MAP contributors"
-repository-code: "https://github.com/sumeer1/HyperSpatial-MAP"
+  - name: "AtlasTailor contributors"
+repository-code: "https://github.com/sumeer1/AtlasTailor"
 license: BSD-3-Clause
 keywords:
   - spatial transcriptomics
@@ -15,7 +15,7 @@ keywords:
   - developmental forecasting
 preferred-citation:
   type: article
-  title: "HyperSpatial-MAP"
+  title: "AtlasTailor"
   authors:
     - name: "Authors to be supplied before release"
   journal: "Nature Biotechnology"

@@ -1,4 +1,4 @@
-site_name: HyperSpatial-MAP
+site_name: AtlasTailor
 site_description: Atlas adaptation and developmental forecasting from sparse spatial measurements
 theme:
   name: material

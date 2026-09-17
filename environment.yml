@@ -1,4 +1,4 @@
-name: hyperspatial-map
+name: atlas-tailor
 channels: [conda-forge, pytorch]
 dependencies:
   - python=3.11
@@ -14,4 +14,3 @@ dependencies:
   - pip
   - pip:
       - -e .[test,docs,notebooks]
-

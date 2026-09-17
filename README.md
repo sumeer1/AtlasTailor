@@ -1,8 +1,8 @@
-# HyperSpatial-MAP
+# AtlasTailor
 
 **Sparse measurements adapt a deeply measured spatial atlas toward the molecular state of an individual specimen.**
 
-HyperSpatial-MAP is an atlas-adaptation framework for spatial omics:
+AtlasTailor is an atlas-adaptation framework for spatial omics:
 
 > registered atlas prior + sparse target adaptation = individualized molecular reconstruction
 
@@ -10,7 +10,7 @@ The reference and target are distinct specimens, sections, stages, or technologi
 
 ## Overview
 
-[![HyperSpatial-MAP overview](docs/assets/Figure_1_preview.png)](docs/assets/Figure_1.pdf)
+[![AtlasTailor overview](docs/assets/Figure_1_preview.png)](docs/assets/Figure_1.pdf)
 
 [Open the publication-quality Figure 1 PDF](docs/assets/Figure_1.pdf)
 
@@ -18,7 +18,9 @@ The reference and target are distinct specimens, sections, stages, or technologi
 
 This is the **software repository**. It contains the installable package, command-line interface, reusable preprocessing/data contracts, deterministic fixtures, tests, documentation, and compact tutorials.
 
-The separate [HyperSpatial-MAP reproducibility repository](https://github.com/sumeer1/HyperSpatial-MAP-reproducibility) contains the manuscript-scale executed workflows, frozen configurations, evidence tables, source-panel SVGs, checksums, and figure provenance. Final manual Inkscape assemblies are kept outside both computational repositories; the reproducibility record traces every final panel to its generated source asset and workflow.
+The separate [AtlasTailor reproducibility repository](https://github.com/sumeer1/AtlasTailor-reproducibility) contains the manuscript-scale executed workflows, frozen configurations, evidence tables, source-panel SVGs, checksums, and figure provenance. Final manual Inkscape assemblies are kept outside both computational repositories; the reproducibility record traces every final panel to its generated source asset and workflow.
+
+The Python import namespace and command-line executable remain `hyperspatial` for backward compatibility with frozen analyses.
 
 See [REPOSITORY_SCOPE.md](REPOSITORY_SCOPE.md) for the boundary between the two repositories.
 
@@ -27,10 +29,10 @@ See [REPOSITORY_SCOPE.md](REPOSITORY_SCOPE.md) for the boundary between the two 
 Python 3.10–3.11 is supported.
 
 ```bash
-git clone https://github.com/sumeer1/HyperSpatial-MAP.git
-cd HyperSpatial-MAP
+git clone https://github.com/sumeer1/AtlasTailor.git
+cd AtlasTailor
 conda env create -f environment.yml
-conda activate hyperspatial-map
+conda activate atlas-tailor
 python -m pip install -e .
 ```
 

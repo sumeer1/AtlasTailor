@@ -1,6 +1,6 @@
 # Preprocessing boundary
 
-HyperSpatial-MAP expects a reference and sparse target in the documented AnnData contract; see [data formats](../docs/data_formats.md). Reusable checks belong in the package, while dataset-specific conversion and QC remain part of the manuscript reproducibility record.
+AtlasTailor expects a reference and sparse target in the documented AnnData contract; see [data formats](../docs/data_formats.md). Reusable checks belong in the package, while dataset-specific conversion and QC remain part of the manuscript reproducibility record.
 
 The general sequence is:
 

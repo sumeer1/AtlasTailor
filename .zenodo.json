@@ -1,9 +1,8 @@
 {
-  "title": "HyperSpatial-MAP",
+  "title": "AtlasTailor",
   "description": "Atlas adaptation and developmental forecasting from spatial reference atlases and sparse measurements.",
   "license": "BSD-3-Clause",
   "upload_type": "software",
   "keywords": ["spatial transcriptomics", "spatial omics", "atlas adaptation", "bioinformatics"],
   "creators": [{"name": "Authors to be supplied before archival release"}]
 }
-

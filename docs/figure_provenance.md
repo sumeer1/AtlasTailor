@@ -14,7 +14,7 @@ Use:
 python scripts/verify_release.py
 ```
 
-to validate the software-repository checksums. Consult the companion [HyperSpatial-MAP reproducibility repository](https://github.com/sumeer1/HyperSpatial-MAP-reproducibility) for `manuscript/FIGURE_PROVENANCE.tsv`, `manuscript/SUPPLEMENTARY_PROVENANCE.tsv`, and `manuscript/SOURCE_PANEL_PROVENANCE.tsv`.
+to validate the software-repository checksums. Consult the companion [AtlasTailor reproducibility repository](https://github.com/sumeer1/AtlasTailor-reproducibility) for `manuscript/FIGURE_PROVENANCE.tsv`, `manuscript/SUPPLEMENTARY_PROVENANCE.tsv`, and `manuscript/SOURCE_PANEL_PROVENANCE.tsv`.
 
 The `assembly_status` field states whether a source figure was programmatic, imported into the external manual Inkscape assembly, or manually authored. Renderer limitations are stated directly in the relevant row; the release does not invent missing historical renderers.
 

@@ -11,6 +11,5 @@ body:
     validations: {required: true}
   - type: textarea
     id: environment
-    attributes: {label: Environment, description: HyperSpatial-MAP, Python, OS and dependency versions}
+    attributes: {label: Environment, description: AtlasTailor, Python, OS and dependency versions}
     validations: {required: true}
-

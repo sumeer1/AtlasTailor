@@ -1,6 +1,6 @@
 # FAQ
 
-## Is HyperSpatial-MAP generic imputation?
+## Is AtlasTailor generic imputation?
 
 No. It begins with a geometry-registered atlas expectation and predicts a target-specific residual only when source validation supports correction.
 
@@ -19,4 +19,3 @@ Yes. Coordinate canonicalization, distance calculations, IDW, residual neighborh
 ## Why did a gene retain registered IDW?
 
 The frozen source guard did not support a correction for that gene. This fallback is part of the method.
-

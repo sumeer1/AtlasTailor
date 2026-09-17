@@ -1,6 +1,6 @@
 # Repository scope
 
-HyperSpatial-MAP uses two linked repositories with distinct responsibilities.
+AtlasTailor uses two linked repositories with distinct responsibilities.
 
 ## This repository: reusable software
 
@@ -24,6 +24,6 @@ Not included:
 
 ## Companion repository: manuscript reproducibility
 
-[HyperSpatial-MAP-reproducibility](https://github.com/sumeer1/HyperSpatial-MAP-reproducibility) preserves executed workflow snapshots, exact frozen configurations and locks, manuscript evidence tables, generated source-panel SVGs, dataset provenance, and integrity manifests.
+[AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility) preserves executed workflow snapshots, exact frozen configurations and locks, manuscript evidence tables, generated source-panel SVGs, dataset provenance, and integrity manifests.
 
 Keeping these layers separate makes the software repository approachable while retaining a complete, auditable computational record. The repositories are version-linked by Git commit identifiers and SHA-256 manifests.
