@@ -32,21 +32,33 @@ python -m pip install -e .
 
 Python 3.10–3.11 is supported. The import namespace and command-line executable remain `hyperspatial` for compatibility with the frozen analyses.
 
-## Published real-data examples
+## Run AtlasTailor on real data
 
-The public notebooks below use frozen results from the biological datasets reported in the manuscript; they do not use simulated biological examples.
+The end-to-end tutorials execute AtlasTailor on public biological datasets. They cover source-only panel design, restricted target loading, geometry-only registration, prediction locking and post-lock evaluation.
+
+| Tutorial | Dataset | Public record | Notebook |
+|---|---|---|---|
+| 3D reciprocal reconstruction | Zebrafish 50%-epiboly weMERFISH, E1 → E2 | [Dryad](https://doi.org/10.5061/dryad.j0zpc86v9) | [Run the zebrafish tutorial](notebooks/01_run_atlastailor_zebrafish.ipynb) |
+| 2D serial-section reconstruction | Human DLPFC Visium, 151507 → 151508 | [spatialLIBD / Figshare](https://doi.org/10.6084/m9.figshare.13623902.v1) | [Run the DLPFC tutorial](notebooks/00_run_atlastailor_dlpfc.ipynb) |
+| User dataset template | Prepared reference and target AnnData files | — | [Run AtlasTailor on your data](notebooks/04_run_atlastailor_on_your_data.ipynb) |
+
+The public datasets are not redistributed in this repository. Each tutorial identifies the authoritative record, verifies frozen input hashes where available, and writes new timestamped run directories without altering manuscript results.
+
+## Published-results walkthroughs
+
+The notebooks below inspect compact frozen results from the biological datasets reported in the manuscript. They do not fit the model or substitute for the end-to-end tutorials above.
 
 | Analysis | Biological system | Public record | Notebook |
 |---|---|---|---|
-| Reciprocal atlas adaptation | Zebrafish embryogenesis, 3D weMERFISH | [Dryad](https://doi.org/10.5061/dryad.j0zpc86v9) | [Figure 2 benchmark](notebooks/01_figure2_benchmark.ipynb) |
-| Cross-platform atlas transfer | Human COAD and ovarian cancer; Visium HD → Xenium/CosMx | [SPATCH](https://spatch.pku-genomics.org) | [Cross-platform benchmark](notebooks/02_cross_platform_benchmark.ipynb) |
-| Multi-disease atlas adaptation | Human MASLD, PSC and alcohol-associated hepatitis | [Dataset records](data/DATASETS.tsv) | [Liver disease validation](notebooks/03_liver_disease_validation.ipynb) |
+| Reciprocal atlas adaptation | Zebrafish embryogenesis, 3D weMERFISH | [Dryad](https://doi.org/10.5061/dryad.j0zpc86v9) | [Figure 2 results](notebooks/10_figure2_benchmark_results.ipynb) |
+| Cross-platform atlas transfer | Human COAD and ovarian cancer; Visium HD → Xenium/CosMx | [SPATCH](https://spatch.pku-genomics.org) | [Cross-platform results](notebooks/11_cross_platform_benchmark_results.ipynb) |
+| Multi-disease atlas adaptation | Human MASLD, PSC and alcohol-associated hepatitis | [Dataset records](data/DATASETS.tsv) | [Liver disease results](notebooks/12_liver_disease_validation_results.ipynb) |
 
 The exact executed workflows, prediction locks, frozen configurations, full evidence tables, source-panel SVGs, and checksums are maintained in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility). See [examples/README.md](examples/README.md) for the mapping between datasets, notebooks, and executable workflows.
 
 ## Running AtlasTailor on a new dataset
 
-AtlasTailor accepts reference and target AnnData objects with spatial coordinates in `obsm["spatial"]`. Target input supplied to prediction must contain only the declared measured panel.
+AtlasTailor accepts reference and target AnnData objects with spatial coordinates in `obsm["spatial"]`. The target may be an anchor-only prospective file or a full retrospective matrix: prediction opens it in backed mode and materializes only the declared measured panel.
 
 ```bash
 hyperspatial design \
@@ -68,7 +80,7 @@ See the [input contract](docs/data_formats.md), [preprocessing boundary](preproc
 
 ```text
 src/hyperspatial/      installable implementation and CLI
-notebooks/             real manuscript-data walkthroughs
+notebooks/             end-to-end real-data tutorials and frozen-results walkthroughs
 examples/              frozen real-data evidence used by notebooks
 data/                  dataset accessions and external-data policy
 preprocessing/         input preparation and information boundaries

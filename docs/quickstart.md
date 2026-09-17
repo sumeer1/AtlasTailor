@@ -20,4 +20,4 @@ hyperspatial inspect-run adaptation_run
 
 The target loader materializes only declared panel columns. Held-out truth is a separate validation input and is accepted only after prediction artifacts have been completed and hashed.
 
-For worked biological examples, use the notebooks in the repository root and the exact workflows in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility).
+For an end-to-end biological run, use the [zebrafish weMERFISH tutorial](https://github.com/sumeer1/AtlasTailor/blob/main/notebooks/01_run_atlastailor_zebrafish.ipynb), the [human DLPFC Visium tutorial](https://github.com/sumeer1/AtlasTailor/blob/main/notebooks/00_run_atlastailor_dlpfc.ipynb), or the [user-data template](https://github.com/sumeer1/AtlasTailor/blob/main/notebooks/04_run_atlastailor_on_your_data.ipynb). The exact frozen manuscript workflows remain in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility).

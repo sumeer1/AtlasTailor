@@ -13,4 +13,4 @@ The general sequence is:
 7. select anchors from source information only;
 8. export the target-anchor view separately from withheld target expression.
 
-Provider-specific scripts are not rewritten as generic software because doing so would obscure the code actually executed. Their byte-preserved snapshots, configurations, accessions, and run order are in the companion reproducibility repository.
+Provider-specific manuscript workflows are not rewritten as generic software because doing so would obscure the code actually executed. Their byte-preserved snapshots, configurations, accessions, and run order are in the companion reproducibility repository. The small `export_spatiallibd_coordinates.R` helper serves only the public DLPFC software tutorial: it exports identifiers and geometry from the authoritative spatialLIBD object and is not presented as the frozen Figure 5 workflow.

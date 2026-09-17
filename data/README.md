@@ -4,6 +4,8 @@ Compact frozen tables from the reported biological experiments are bundled under
 
 `DATASETS.tsv` records the authoritative public study or repository for each manuscript experiment. Dataset licenses remain with their providers. Users must review current provider terms before downloading or redistributing data.
 
+The end-to-end DLPFC and zebrafish notebooks place user-downloaded inputs under `data/external/`, which is ignored by Git. No provider-scale expression matrix is committed to the software repository.
+
 ## Verification
 
 1. Download from the official repository or accession.
