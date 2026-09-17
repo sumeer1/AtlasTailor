@@ -14,6 +14,12 @@ registered atlas prior + sparse target adaptation = individualized molecular rec
 
 Unlike conventional within-sample imputation, the reference and target may be different specimens, developmental stages, tissue sections, disease states, or spatial technologies. Geometry-only registration establishes an atlas prior; measured target genes inform an atlas-relative correction; and a source-validation guard retains registered 12-nearest-neighbour inverse-distance weighting when adaptation is unsupported.
 
+## Framework overview
+
+[![AtlasTailor framework and validation design](docs/assets/Figure_1_preview.png)](docs/assets/Figure_1.pdf)
+
+[Open the publication-quality vector PDF](docs/assets/Figure_1.pdf)
+
 ## Installation
 
 ```bash
