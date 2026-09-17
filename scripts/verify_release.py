@@ -22,15 +22,17 @@ def main() -> int:
     failures: list[str] = []
     required = [
         "README.md",
-        "REPOSITORY_SCOPE.md",
+        "docs/repository_scope.md",
         "pyproject.toml",
         "environment.yml",
         "src/hyperspatial/__init__.py",
-        "examples/minimal_2d/config.yaml",
-        "notebooks/06_figure2_evidence_walkthrough.ipynb",
+        "tests/fixtures/minimal_2d/config.yaml",
+        "notebooks/01_figure2_benchmark.ipynb",
+        "notebooks/02_cross_platform_benchmark.ipynb",
+        "notebooks/03_liver_disease_validation.ipynb",
         "docs/assets/Figure_1.pdf",
         "docs/assets/Figure_1_preview.png",
-        "SHA256SUMS.tsv",
+        "provenance/SHA256SUMS.tsv",
     ]
     for name in required:
         if not (root / name).is_file():
@@ -41,7 +43,7 @@ def main() -> int:
             failures.append(f"manuscript-scale content present in software repository: {excluded}")
 
     checked = 0
-    manifest = root / "SHA256SUMS.tsv"
+    manifest = root / "provenance/SHA256SUMS.tsv"
     if manifest.is_file():
         with manifest.open(newline="", encoding="utf-8") as handle:
             for row in csv.DictReader(handle, delimiter="\t"):
@@ -60,7 +62,9 @@ def main() -> int:
         "status": "PASS" if not failures else "FAIL",
         "failures": failures,
     }
-    (root / "RELEASE_VALIDATION.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    report_path = root / "provenance/RELEASE_VALIDATION.json"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))
     return 0 if not failures else 1
 

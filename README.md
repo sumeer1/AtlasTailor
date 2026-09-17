@@ -1,32 +1,20 @@
 # AtlasTailor
 
-**Sparse measurements adapt a deeply measured spatial atlas toward the molecular state of an individual specimen.**
+**Sparse measurements tailor a deeply measured spatial atlas to an individual specimen.**
 
-AtlasTailor is an atlas-adaptation framework for spatial omics:
+[![CI](https://github.com/sumeer1/AtlasTailor/actions/workflows/ci.yml/badge.svg)](https://github.com/sumeer1/AtlasTailor/actions/workflows/ci.yml)
+[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](LICENSE)
+[![Python 3.10–3.11](https://img.shields.io/badge/python-3.10%20%7C%203.11-blue.svg)](pyproject.toml)
 
-> registered atlas prior + sparse target adaptation = individualized molecular reconstruction
+AtlasTailor reconstructs an individual target’s spatial molecular state by combining a deeply measured reference atlas with target geometry and a small, prespecified panel of target genes:
 
-The reference and target are distinct specimens, sections, stages, or technologies. Geometry-only registration transfers the reference atlas, a small prespecified target panel informs an atlas-relative residual model, and a source-validation guard retains registered 12-nearest-neighbour inverse-distance weighting (IDW) when correction is unsupported.
+```text
+registered atlas prior + sparse target adaptation = individualized molecular reconstruction
+```
 
-## Overview
-
-[![AtlasTailor overview](docs/assets/Figure_1_preview.png)](docs/assets/Figure_1.pdf)
-
-[Open the publication-quality Figure 1 PDF](docs/assets/Figure_1.pdf)
-
-## Repository scope
-
-This is the **software repository**. It contains the installable package, command-line interface, reusable preprocessing/data contracts, deterministic fixtures, tests, documentation, and compact tutorials.
-
-The separate [AtlasTailor reproducibility repository](https://github.com/sumeer1/AtlasTailor-reproducibility) contains the manuscript-scale executed workflows, frozen configurations, evidence tables, source-panel SVGs, checksums, and figure provenance. Final manual Inkscape assemblies are kept outside both computational repositories; the reproducibility record traces every final panel to its generated source asset and workflow.
-
-The Python import namespace and command-line executable remain `hyperspatial` for backward compatibility with frozen analyses.
-
-See [REPOSITORY_SCOPE.md](REPOSITORY_SCOPE.md) for the boundary between the two repositories.
+Unlike conventional within-sample imputation, the reference and target may be different specimens, developmental stages, tissue sections, disease states, or spatial technologies. Geometry-only registration establishes an atlas prior; measured target genes inform an atlas-relative correction; and a source-validation guard retains registered 12-nearest-neighbour inverse-distance weighting when adaptation is unsupported.
 
 ## Installation
-
-Python 3.10–3.11 is supported.
 
 ```bash
 git clone https://github.com/sumeer1/AtlasTailor.git
@@ -36,76 +24,73 @@ conda activate atlas-tailor
 python -m pip install -e .
 ```
 
-Or install directly with pip:
+Python 3.10–3.11 is supported. The import namespace and command-line executable remain `hyperspatial` for compatibility with the frozen analyses.
+
+## Published real-data examples
+
+The public notebooks below use frozen results from the biological datasets reported in the manuscript; they do not use simulated biological examples.
+
+| Analysis | Biological system | Public record | Notebook |
+|---|---|---|---|
+| Reciprocal atlas adaptation | Zebrafish embryogenesis, 3D weMERFISH | [Dryad](https://doi.org/10.5061/dryad.j0zpc86v9) | [Figure 2 benchmark](notebooks/01_figure2_benchmark.ipynb) |
+| Cross-platform atlas transfer | Human COAD and ovarian cancer; Visium HD → Xenium/CosMx | [SPATCH](https://spatch.pku-genomics.org) | [Cross-platform benchmark](notebooks/02_cross_platform_benchmark.ipynb) |
+| Multi-disease atlas adaptation | Human MASLD, PSC and alcohol-associated hepatitis | [Dataset records](data/DATASETS.tsv) | [Liver disease validation](notebooks/03_liver_disease_validation.ipynb) |
+
+The exact executed workflows, prediction locks, frozen configurations, full evidence tables, source-panel SVGs, and checksums are maintained in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility). See [examples/README.md](examples/README.md) for the mapping between datasets, notebooks, and executable workflows.
+
+## Running AtlasTailor on a new dataset
+
+AtlasTailor accepts reference and target AnnData objects with spatial coordinates in `obsm["spatial"]`. Target input supplied to prediction must contain only the declared measured panel.
 
 ```bash
-python -m pip install .
+hyperspatial design \
+  --reference reference.h5ad \
+  --budget 16 \
+  --out panel_run
+
+hyperspatial adapt \
+  --reference reference.h5ad \
+  --target target_anchors_only.h5ad \
+  --panel panel_run/recommended_panel.tsv \
+  --config config.yaml \
+  --out adaptation_run
 ```
 
-## Five-minute example
+See the [input contract](docs/data_formats.md), [preprocessing boundary](preprocessing/README.md), [adaptation workflow](docs/adapt.md), and [CLI reference](docs/cli.md).
 
-```python
-import hyperspatial as hs
-from hyperspatial.io import read_reference, read_target
+## Repository structure
 
-reference = read_reference("examples/minimal_2d/reference.h5ad")
-panel = hs.design_panel(reference, budget=8)
-target = read_target("examples/minimal_2d/target.h5ad", panel.genes)
-
-result = hs.adapt(
-    reference=reference,
-    target=target,
-    measured_genes=panel.genes,
-    config=hs.AdaptConfig(registration="pre_registered", seeds=(42,)),
-)
-result.export("adaptation_run")
+```text
+src/hyperspatial/      installable implementation and CLI
+notebooks/             real manuscript-data walkthroughs
+examples/              frozen real-data evidence used by notebooks
+data/                  dataset accessions and external-data policy
+preprocessing/         input preparation and information boundaries
+tests/                 software tests and internal CI fixtures
+docs/                  methods, API and scientific guardrails
+provenance/            software-release manifest and validation report
 ```
 
-The bundled fixtures are deterministic synthetic examples for software testing, not manuscript evidence.
+## Reproducibility
 
-## Tutorials
+This repository is deliberately focused on reusable software. Manuscript-scale workflows and evidence live in the companion reproducibility repository so that users do not need to clone the full research record to install AtlasTailor.
 
-- [Quickstart](notebooks/00_quickstart.ipynb)
-- [Source-only sparse-panel design](notebooks/01_design_sparse_panel.ipynb)
-- [3D specimen adaptation](notebooks/02_adapt_3d_specimen.ipynb)
-- [Atlas-relative residual exploration](notebooks/03_explore_target_specific_residuals.ipynb)
-- [Tracking-conditioned forecasting](notebooks/04_forecast_with_MAPT.ipynb)
-- [2D Visium adaptation](notebooks/05_adapt_2d_visium.ipynb)
-- [Figure 2 frozen-evidence walkthrough](notebooks/06_figure2_evidence_walkthrough.ipynb)
+- [Software/reproducibility boundary](docs/repository_scope.md)
+- [Dataset catalogue](data/DATASETS.tsv)
+- [Figure provenance](docs/figure_provenance.md)
+- [Release validation](docs/validation.md)
 
-The Figure 2 walkthrough reads a small, immutable summary extract. It does not retrain the model or reproduce the manual manuscript layout.
+## Scientific safeguards
 
-## Data and preprocessing
-
-- [Input formats and validation](docs/data_formats.md)
-- [Preprocessing boundary](preprocessing/README.md)
-- [Dataset accessions](data/DATASETS.tsv)
-- [External-artifact policy](data/EXTERNAL_ARTIFACT_POLICY.md)
-
-Manuscript-scale provider matrices and prediction arrays are not redistributed through GitHub. Dataset-specific executed preprocessing is archived in the reproducibility repository.
-
-## Tests and quality checks
-
-```bash
-pytest -m 'not regression'
-python scripts/execute_notebooks.py --smoke
-python scripts/build_release_manifest.py
-python scripts/verify_release.py
-ruff check src tests scripts
-```
-
-## Scientific guardrails
-
-- Geometry registration excludes target molecular expression.
-- Only declared target anchors are available during prediction.
-- Target non-anchor expression is withheld until predictions are serialized and locked.
+- Target molecular expression is excluded from geometry registration.
+- Anchor selection uses source information only.
+- Target non-anchor expression remains withheld until predictions are serialized and locked.
 - Predictor selection, calibration, and fallback use source validation rather than target outcomes.
 - Registered IDW predicts no atlas-relative correction; its residual correlation is undefined, not zero.
-- Genes and spots are technical evaluation units and do not create biological replication.
-- Atlas-relative residuals are not automatically biological, causal, or clinically predictive.
+- Spots and genes are evaluation units, not independent biological replicates.
 
 See [scientific guardrails](docs/scientific_guardrails.md) and [statistical units](docs/statistical_units.md).
 
-## Citation and license
+## Citation and licence
 
-Citation metadata are provided in [CITATION.cff](CITATION.cff). Code is distributed under the BSD 3-Clause License. External datasets retain their original licences and terms.
+Citation metadata are provided in [CITATION.cff](CITATION.cff). AtlasTailor is distributed under the [BSD 3-Clause License](LICENSE). External datasets retain their original licences and access terms.

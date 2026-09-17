@@ -21,4 +21,4 @@ conda env create -f environment.yml
 conda activate atlas-tailor
 ```
 
-The non-rigid registration stage is the most computationally intensive component. The bundled examples use pre-registered synthetic coordinates and complete quickly on CPU.
+The non-rigid registration stage is the most computationally intensive component. Public manuscript workflows document the compute and data requirements for each real dataset; compact files under `tests/fixtures/` are used only for automated software validation.

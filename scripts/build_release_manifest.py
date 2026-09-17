@@ -35,7 +35,8 @@ def main() -> int:
     args = parser.parse_args()
 
     root = args.root.resolve()
-    output = (args.output or root / "SHA256SUMS.tsv").resolve()
+    output = (args.output or root / "provenance" / "SHA256SUMS.tsv").resolve()
+    output.parent.mkdir(parents=True, exist_ok=True)
     files = sorted(path for path in root.rglob("*") if path.is_file() and included(path.relative_to(root)))
 
     lines = ["sha256\tbytes\tpath"]

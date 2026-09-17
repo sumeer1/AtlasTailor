@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create deterministic, license-clean synthetic fixtures for package tutorials."""
+"""Create deterministic, license-clean fixtures for automated software tests."""
 from pathlib import Path
 import anndata as ad
 import numpy as np
@@ -17,7 +17,7 @@ def specimen(dim: int, seed: int, n: int = 128, g: int = 48):
     return coordinates, counts
 
 def write_pair(dim: int):
-    out = ROOT / "examples" / f"minimal_{dim}d"
+    out = ROOT / "tests" / "fixtures" / f"minimal_{dim}d"
     out.mkdir(parents=True, exist_ok=True)
     coordinates, counts = specimen(dim, 110 + dim)
     rng = np.random.default_rng(220 + dim)
@@ -37,7 +37,7 @@ def write_pair(dim: int):
     )
 
 def tracking_fixture():
-    early_dir = ROOT / "examples" / "minimal_2d"
+    early_dir = ROOT / "tests" / "fixtures" / "minimal_2d"
     early = ad.read_h5ad(early_dir / "target.h5ad")
     n, g = early.shape
     rng = np.random.default_rng(412)
@@ -55,4 +55,3 @@ if __name__ == "__main__":
     write_pair(2)
     write_pair(3)
     tracking_fixture()
-

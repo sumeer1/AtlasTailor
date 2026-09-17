@@ -1,6 +1,6 @@
 # Data access
 
-Only deterministic synthetic fixtures are bundled under `examples/`. Manuscript-scale spatial expression matrices, human molecular data, and prediction arrays are excluded from GitHub.
+Compact frozen tables from the reported biological experiments are bundled under `examples/manuscript_evidence/` for the public notebooks. Provider-scale spatial expression matrices, human molecular data, and prediction arrays are excluded from GitHub. Small simulated fixtures used exclusively by automated tests are isolated under `tests/fixtures/`.
 
 `DATASETS.tsv` records the authoritative public study or repository for each manuscript experiment. Dataset licenses remain with their providers. Users must review current provider terms before downloading or redistributing data.
 
@@ -15,4 +15,3 @@ Only deterministic synthetic fixtures are bundled under `examples/`. Manuscript-
 The MASLD `Visium.zip` archive, for example, was verified at exactly 336,420,009 bytes with MD5 `2962d8463da108f9fb9ef951d9204dbd`; the archive itself is not redistributed here.
 
 Some workflows depend on publication-linked processed data whose upstream construction is not fully reproducible from raw reads. Such limitations remain documented in the original audits and must not be obscured.
-

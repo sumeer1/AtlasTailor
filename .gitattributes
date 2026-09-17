@@ -9,4 +9,4 @@
 *.tsv text eol=lf
 
 # Preserve compact frozen tutorial evidence exactly.
-examples/figure2_frozen_summary/** -text
+examples/manuscript_evidence/** -text

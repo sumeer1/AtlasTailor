@@ -5,7 +5,7 @@ theme:
 nav:
   - Home: index.md
   - Installation: installation.md
-  - Quickstart: quickstart.md
+  - Running AtlasTailor: quickstart.md
   - Data formats: data_formats.md
   - Design a panel: design_panel.md
   - Adapt a specimen: adapt.md
@@ -16,6 +16,8 @@ nav:
   - Scientific guardrails: scientific_guardrails.md
   - Manuscript overview: manuscript_overview.md
   - Figure provenance: figure_provenance.md
+  - Repository scope: repository_scope.md
+  - Release validation: validation.md
   - Statistical units: statistical_units.md
   - Architecture and provenance: tool_architecture.md
   - FAQ: faq.md
