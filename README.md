@@ -32,6 +32,42 @@ python -m pip install -e .
 
 Python 3.10–3.11 is supported. The import namespace and command-line executable remain `hyperspatial` for compatibility with the frozen analyses.
 
+## Minimal Python workflow
+
+AtlasTailor separates prediction-time target input from held-out evaluation truth. The target loader below materializes only the 16 measured genes; the full matrix is opened separately only after the prediction run has been completed and hashed.
+
+```python
+from hyperspatial import adapt, design_panel, validate
+from hyperspatial.io import read_reference, read_target, read_truth
+
+# Deeply measured reference atlas
+reference = read_reference("reference.h5ad", coordinate_key="spatial")
+
+# Select the measurement panel using the reference only
+panel = design_panel(reference, budget=16, out="runs/panel")
+
+# Load only target geometry and the declared measured genes
+target = read_target(
+    "target.h5ad",
+    measured_genes=panel.genes,
+    coordinate_key="spatial",
+)
+
+# Geometry-only registration, registered atlas transfer and sparse adaptation
+result = adapt(
+    reference,
+    target,
+    measured_genes=panel.genes,
+    out="runs/adaptation",
+)
+
+# Optional retrospective evaluation, performed only after prediction lock
+truth, _ = read_truth("target.h5ad", result.genes, coordinate_key="spatial")
+metrics = validate(result, truth, out="runs/adaptation/gene_metrics.tsv")
+```
+
+The [documentation](https://atlastailor.readthedocs.io) explains the pipeline, input contract, API and scientific information boundary. Until the hosted documentation is activated, the same source is available under [`docs/`](docs/index.md).
+
 ## Run AtlasTailor on real data
 
 The end-to-end tutorials execute AtlasTailor on public biological datasets. They cover source-only panel design, restricted target loading, geometry-only registration, prediction locking and post-lock evaluation.
@@ -56,7 +92,7 @@ The notebooks below inspect compact frozen results from the biological datasets 
 
 The exact executed workflows, prediction locks, frozen configurations, full evidence tables, source-panel SVGs, and checksums are maintained in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility). See [examples/README.md](examples/README.md) for the mapping between datasets, notebooks, and executable workflows.
 
-## Running AtlasTailor on a new dataset
+## Command-line workflow
 
 AtlasTailor accepts reference and target AnnData objects with spatial coordinates in `obsm["spatial"]`. The target may be an anchor-only prospective file or a full retrospective matrix: prediction opens it in backed mode and materializes only the declared measured panel.
 
@@ -74,7 +110,7 @@ hyperspatial adapt \
   --out adaptation_run
 ```
 
-See the [input contract](docs/data_formats.md), [preprocessing boundary](preprocessing/README.md), [adaptation workflow](docs/adapt.md), and [CLI reference](docs/cli.md).
+See the [quickstart](docs/quickstart.md), [input contract](docs/data_formats.md), [preprocessing boundary](preprocessing/README.md), [adaptation workflow](docs/adapt.md), and [CLI reference](docs/cli.md).
 
 ## Repository structure
 

@@ -5,18 +5,27 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "hyperspatial-map"
 version = "0.1.0"
-description = "Atlas adaptation and developmental forecasting from spatial reference atlases and sparse measurements"
+description = "Sparse measurements tailor a deeply measured spatial atlas to an individual specimen"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "BSD-3-Clause"}
 keywords = ["spatial-transcriptomics", "spatial-omics", "atlas", "bioinformatics"]
 classifiers = [
   "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Topic :: Scientific/Engineering :: Bio-Informatics",
 ]
+
+[project.urls]
+Homepage = "https://github.com/sumeer1/AtlasTailor"
+Documentation = "https://atlastailor.readthedocs.io"
+Repository = "https://github.com/sumeer1/AtlasTailor"
+"Reproducibility record" = "https://github.com/sumeer1/AtlasTailor-reproducibility"
+"Bug tracker" = "https://github.com/sumeer1/AtlasTailor/issues"
 dependencies = [
   "anndata>=0.10,<0.13",
   "h5py>=3.8",
