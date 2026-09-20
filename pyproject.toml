@@ -19,13 +19,6 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Topic :: Scientific/Engineering :: Bio-Informatics",
 ]
-
-[project.urls]
-Homepage = "https://github.com/sumeer1/AtlasTailor"
-Documentation = "https://atlastailor.readthedocs.io"
-Repository = "https://github.com/sumeer1/AtlasTailor"
-"Reproducibility record" = "https://github.com/sumeer1/AtlasTailor-reproducibility"
-"Bug tracker" = "https://github.com/sumeer1/AtlasTailor/issues"
 dependencies = [
   "anndata>=0.10,<0.13",
   "h5py>=3.8",
@@ -38,6 +31,13 @@ dependencies = [
   "scikit-learn>=1.2",
   "torch>=2",
 ]
+
+[project.urls]
+Homepage = "https://github.com/sumeer1/AtlasTailor"
+Documentation = "https://atlastailor.readthedocs.io"
+Repository = "https://github.com/sumeer1/AtlasTailor"
+"Reproducibility record" = "https://github.com/sumeer1/AtlasTailor-reproducibility"
+"Bug tracker" = "https://github.com/sumeer1/AtlasTailor/issues"
 
 [project.optional-dependencies]
 docs = ["mkdocs>=1.5,<2", "mkdocs-material>=9,<10", "mkdocstrings[python]>=0.24,<2"]
