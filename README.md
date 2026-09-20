@@ -18,7 +18,7 @@ Unlike conventional within-sample imputation, the reference and target may be di
 
 [![AtlasTailor framework and validation design](docs/assets/Figure_1_preview.png)](docs/assets/Figure_1.pdf)
 
-[Open the publication-quality vector PDF](docs/assets/Figure_1.pdf)
+
 
 ## Installation
 
