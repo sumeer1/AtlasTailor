@@ -90,7 +90,7 @@ The notebooks below inspect compact frozen results from the biological datasets 
 | Cross-platform atlas transfer | Human COAD and ovarian cancer; Visium HD → Xenium/CosMx | [SPATCH](https://spatch.pku-genomics.org) | [Cross-platform results](notebooks/11_cross_platform_benchmark_results.ipynb) |
 | Multi-disease atlas adaptation | Human MASLD, PSC and alcohol-associated hepatitis | [Dataset records](data/DATASETS.tsv) | [Liver disease results](notebooks/12_liver_disease_validation_results.ipynb) |
 
-The exact executed workflows, prediction locks, frozen configurations, full evidence tables, source-panel SVGs, and checksums are maintained in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility). See [examples/README.md](examples/README.md) for the mapping between datasets, notebooks, and executable workflows.
+The exact executed workflows, prediction locks, frozen configurations, full evidence tables,  and checksums are maintained in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility). See [examples/README.md](examples/README.md) for the mapping between datasets, notebooks, and executable workflows.
 
 ## Command-line workflow
 
@@ -134,16 +134,6 @@ This repository is deliberately focused on reusable software. Manuscript-scale w
 - [Figure provenance](docs/figure_provenance.md)
 - [Release validation](docs/validation.md)
 
-## Scientific safeguards
-
-- Target molecular expression is excluded from geometry registration.
-- Anchor selection uses source information only.
-- Target non-anchor expression remains withheld until predictions are serialized and locked.
-- Predictor selection, calibration, and fallback use source validation rather than target outcomes.
-- Registered IDW predicts no atlas-relative correction; its residual correlation is undefined, not zero.
-- Spots and genes are evaluation units, not independent biological replicates.
-
-See [scientific guardrails](docs/scientific_guardrails.md) and [statistical units](docs/statistical_units.md).
 
 ## Citation and licence
 
