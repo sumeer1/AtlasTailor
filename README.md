@@ -12,7 +12,6 @@ AtlasTailor reconstructs an individual target’s spatial molecular state by com
 registered atlas prior + sparse target adaptation = individualized molecular reconstruction
 ```
 
-Unlike conventional within-sample imputation, the reference and target may be different specimens, developmental stages, tissue sections, disease states, or spatial technologies. Geometry-only registration establishes an atlas prior; measured target genes inform an atlas-relative correction; and a source-validation guard retains registered 12-nearest-neighbour inverse-distance weighting when adaptation is unsupported.
 
 ## Framework overview
 
@@ -30,7 +29,7 @@ conda activate atlas-tailor
 python -m pip install -e .
 ```
 
-Python 3.10–3.11 is supported. The import namespace and command-line executable remain `hyperspatial` for compatibility with the frozen analyses.
+
 
 ## Minimal Python workflow
 
@@ -66,7 +65,7 @@ truth, _ = read_truth("target.h5ad", result.genes, coordinate_key="spatial")
 metrics = validate(result, truth, out="runs/adaptation/gene_metrics.tsv")
 ```
 
-The [documentation](https://atlastailor.readthedocs.io) explains the pipeline, input contract, API and scientific information boundary. Until the hosted documentation is activated, the same source is available under [`docs/`](docs/index.md).
+The [documentation](https://atlastailor.readthedocs.io) explains the pipeline, input contract, API and scientific information boundary. 
 
 ## Run AtlasTailor on real data
 
@@ -127,7 +126,7 @@ provenance/            software-release manifest and validation report
 
 ## Reproducibility
 
-This repository is deliberately focused on reusable software. Manuscript-scale workflows and evidence live in the companion reproducibility repository so that users do not need to clone the full research record to install AtlasTailor.
+This repository is focused on reusable software. Manuscript-scale workflows and evidence live in the companion reproducibility repository so that users do not need to clone the full research record to install AtlasTailor.
 
 - [Software/reproducibility boundary](docs/repository_scope.md)
 - [Dataset catalogue](data/DATASETS.tsv)
