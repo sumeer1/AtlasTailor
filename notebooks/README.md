@@ -10,8 +10,8 @@
 
 The provider-scale matrices remain outside Git under `data/external/`. Continuous integration syntax-checks these notebooks; full execution is opt-in because it requires external downloads and can be computationally substantial.
 
-## Published-results walkthroughs
+## Reported-results summaries
 
-The `10`–`12` notebooks read compact frozen evidence bundled under `examples/manuscript_evidence/`. They document reported results but do not fit AtlasTailor. These notebooks are executed in continuous integration.
+The `10`–`12` notebooks read versioned summary tables bundled under `examples/manuscript_evidence/`. They document reported results without fitting AtlasTailor. These notebooks are executed in continuous integration.
 
 Provider-scale inputs remain outside Git and are obtained from the public records listed in `data/DATASETS.tsv`.

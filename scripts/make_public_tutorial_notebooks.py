@@ -395,7 +395,7 @@ assert result.manifest.data["target_nonanchor_access_before_prediction"] is Fals
 
 The target truth is opened only after the completed prediction manifest has
 been asserted. This evaluation is a fresh software tutorial run; manuscript
-numbers should be taken from the bundled frozen results walkthrough.
+values should be taken from the versioned manuscript result tables.
 """),
         code(r'''
 truth, truth_coordinates = read_truth(TARGET, result.genes, coordinate_key="global_sphere")

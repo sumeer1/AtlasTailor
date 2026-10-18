@@ -12,10 +12,10 @@ These notebooks run the reusable AtlasTailor API from source-only panel design t
 
 Provider-scale matrices are not committed to GitHub. The notebooks identify authoritative records, verify frozen hashes where available and write new timestamped output directories. Continuous integration syntax-checks these notebooks; full execution is opt-in because it requires external data and can be computationally substantial.
 
-## Published-results walkthroughs
+## Reported-results summaries
 
-The `10`–`12` notebooks inspect compact frozen evidence for the zebrafish, cross-platform and liver-disease results. They do not fit AtlasTailor and are clearly separated from the execution tutorials. All three execute in continuous integration.
+The `10`–`12` notebooks inspect versioned summary tables for the zebrafish, cross-platform and liver-disease results. They do not fit AtlasTailor and are clearly separated from the execution tutorials. All three execute in continuous integration.
 
 ## Exact manuscript workflows
 
-The tutorials exercise the reusable interface and are not substitutes for the exact manuscript computations. Compact frozen summary tables used by the published-results walkthroughs are bundled under `examples/`.
+The tutorials exercise the reusable interface and are not substitutes for the exact manuscript computations. Versioned summary tables used by the reported-results notebooks are bundled under `examples/`.

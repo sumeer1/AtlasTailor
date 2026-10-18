@@ -32,4 +32,4 @@ The software is a thin, regression-tested interface over the frozen manuscript i
 
 Geometry registration does not receive target molecular measurements. Panel selection, predictor selection, calibration and fallback use source information. At prediction time the target loader materializes only the declared measured genes. Full target expression is accepted only by the separate post-lock validation workflow.
 
-This repository contains the reusable package, real-data tutorials, compact published-results walkthroughs, dataset records and release validation material.
+This repository contains the reusable package, real-data tutorials, compact reported-results summaries, dataset records and release validation material.

@@ -6,11 +6,11 @@ This repository is focused on reusable AtlasTailor software and concise public e
 
 - installable Python package and CLI;
 - reusable 2D/3D input and preprocessing contracts;
-- compact real-data manuscript walkthroughs;
+- compact real-data result summaries;
 - deterministic fixtures isolated under `tests/` for automated validation;
 - unit, API, leakage-boundary, and notebook tests;
 - user documentation;
-- a compact frozen Figure 2 evidence walkthrough;
+- compact versioned evidence for the Figure 2 analyses;
 - the final Figure 1 overview for orientation.
 
 ## Not included
@@ -19,6 +19,6 @@ This repository is focused on reusable AtlasTailor software and concise public e
 - the complete collection of frozen evidence tables;
 - historical executed workflow snapshots and prediction locks;
 - generated manuscript source panels;
-- final manual Inkscape assemblies.
+- final manuscript composite artwork.
 
-Keeping provider-scale datasets and manuscript assembly assets outside the software package makes installation and review concise. Public dataset records are listed under `data/`, and compact frozen summary tables used by the walkthrough notebooks are bundled under `examples/`.
+Keeping provider-scale datasets and manuscript artwork outside the software package makes installation and review concise. Public dataset records are listed under `data/`, and versioned summary tables used by the reported-results notebooks are bundled under `examples/`.

@@ -1,5 +1,5 @@
 # Figure 2 frozen summary
 
-These three compact tables are byte-identical extracts from the frozen manuscript evidence used by the Figure 2 walkthrough. They support inspection and plotting examples only; they do not reproduce prediction fitting or the final manual Inkscape assembly.
+These three compact tables are byte-identical extracts from the versioned manuscript evidence underlying the Figure 2 analyses. They support inspection and plotting without reproducing prediction fitting.
 
-The bundled files are the compact frozen inputs used by the public Figure 2 results walkthrough.
+The bundled files are the compact inputs used by the Figure 2 results-summary notebook.

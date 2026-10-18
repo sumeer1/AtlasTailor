@@ -8,7 +8,7 @@ Executable biological tutorials are kept separately under [`notebooks/`](../note
 - `01_run_atlastailor_zebrafish.ipynb` — public 3D zebrafish weMERFISH data;
 - `04_run_atlastailor_on_your_data.ipynb` — the same information boundary for user-supplied AnnData files.
 
-The `10`–`12` notebooks are published-results walkthroughs and read the frozen evidence below; they are not presented as model-execution tutorials.
+The `10`–`12` notebooks summarize the versioned evidence below; they are separate from the model-execution tutorials.
 
 | Directory | Analysis |
 |---|---|

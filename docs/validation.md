@@ -5,7 +5,7 @@ Validation was repeated on 17 September 2026 using Python 3.11.11 after the publ
 | Check | Result |
 |---|---|
 | Non-regression package tests | PASS — 13 passed, 3 manuscript-regression tests deselected |
-| Published-results notebook execution | PASS — 3 of 3 notebooks |
+| Reported-results notebook execution | PASS — 3 of 3 notebooks |
 | External-data tutorial validation | Syntax-checked in CI; full execution requires authoritative public downloads |
 | Ruff static checks | PASS |
 | MkDocs strict build | PASS |
