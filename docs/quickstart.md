@@ -29,22 +29,22 @@ metrics = validate(result, truth, out="runs/adaptation/gene_metrics.tsv")
 ## Command line
 
 ```bash
-hyperspatial design \
+atlastailor design \
   --reference reference.h5ad \
   --budget 16 \
   --out panel_run
 
-hyperspatial adapt \
+atlastailor adapt \
   --reference reference.h5ad \
   --target target_anchors_only.h5ad \
   --panel panel_run/recommended_panel.tsv \
   --config config.yaml \
   --out adaptation_run
 
-hyperspatial inspect-run adaptation_run
+atlastailor inspect-run adaptation_run
 ```
 
-The command-line interface enforces the same boundary. Use `hyperspatial inspect-run adaptation_run` to inspect run status and provenance.
+The command-line interface enforces the same boundary. Use `atlastailor inspect-run adaptation_run` to inspect run status and provenance. The legacy `hyperspatial` executable remains an alias for reproducibility of frozen commands.
 
 ## Real public datasets
 

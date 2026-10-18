@@ -37,7 +37,8 @@ post-prediction validation operation.
 
 1. `hyperspatial/` is the single scientific and artifact core used by Python,
    CLI, REST and web routes.
-2. `hyperspatial.cli` supplies the `hyperspatial` executable.
+2. `hyperspatial.cli` supplies the public `atlastailor` executable and the
+   backward-compatible `hyperspatial` alias.
 3. `hyperspatial.api` exposes versioned FastAPI routes and a bounded local
    background-job executor. A separately developed web client can consume these
    routes; no browser implementation is duplicated in this release repository.

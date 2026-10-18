@@ -22,7 +22,7 @@ def _panel(path):
     return [x.strip() for x in path.read_text().splitlines() if x.strip() and not x.lower().startswith('gene')]
 
 def parser():
-    p=argparse.ArgumentParser(prog='hyperspatial',description='HyperSpatial-MAP lab toolkit');p.add_argument('--version',action='version',version='0.1.0');s=p.add_subparsers(dest='command',required=True)
+    p=argparse.ArgumentParser(prog='atlastailor',description='AtlasTailor spatial atlas-adaptation toolkit');p.add_argument('--version',action='version',version='0.1.0');s=p.add_subparsers(dest='command',required=True)
     q=s.add_parser('design');q.add_argument('--reference',required=True);q.add_argument('--budget',type=int);q.add_argument('--coordinates');q.add_argument('--layer');q.add_argument('--expression-is-log',action='store_true');q.add_argument('--out',required=True);q.add_argument('--config')
     q=s.add_parser('adapt');q.add_argument('--reference',required=True);q.add_argument('--target',required=True);q.add_argument('--panel',required=True);q.add_argument('--coordinates');q.add_argument('--layer');q.add_argument('--reference-expression-is-log',action='store_true');q.add_argument('--target-measurements-are-log',action='store_true');q.add_argument('--out',required=True);q.add_argument('--config')
     q=s.add_parser('explore');q.add_argument('--run',required=True);q.add_argument('--gene');q.add_argument('--out')

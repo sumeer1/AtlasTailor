@@ -11,7 +11,7 @@ python -m venv .venv
 . .venv/bin/activate
 python -m pip install -U pip
 python -m pip install -e .
-hyperspatial --version
+atlastailor --version
 ```
 
 Use `pip install -e '.[notebooks]'` for tutorials, `.[docs]` for documentation and `.[test]` for development. PyTorch controls GPU support; CPU execution is the default.

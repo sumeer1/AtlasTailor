@@ -29,7 +29,7 @@ conda activate atlas-tailor
 python -m pip install -e .
 ```
 
-
+Python 3.10–3.11 is supported. The primary command-line executable is `atlastailor`. The Python import namespace and legacy `hyperspatial` command remain available for compatibility with the frozen analyses.
 
 ## Minimal Python workflow
 
@@ -96,12 +96,12 @@ The exact executed workflows, prediction locks, frozen configurations, full evid
 AtlasTailor accepts reference and target AnnData objects with spatial coordinates in `obsm["spatial"]`. The target may be an anchor-only prospective file or a full retrospective matrix: prediction opens it in backed mode and materializes only the declared measured panel.
 
 ```bash
-hyperspatial design \
+atlastailor design \
   --reference reference.h5ad \
   --budget 16 \
   --out panel_run
 
-hyperspatial adapt \
+atlastailor adapt \
   --reference reference.h5ad \
   --target target_anchors_only.h5ad \
   --panel panel_run/recommended_panel.tsv \
