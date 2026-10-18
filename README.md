@@ -12,12 +12,9 @@ AtlasTailor reconstructs an individual target’s spatial molecular state by com
 registered atlas prior + sparse target adaptation = individualized molecular reconstruction
 ```
 
-
 ## Framework overview
 
 [![AtlasTailor framework and validation design](docs/assets/Figure_1_preview.png)](docs/assets/Figure_1.pdf)
-
-
 
 ## Installation
 
@@ -29,11 +26,11 @@ conda activate atlas-tailor
 python -m pip install -e .
 ```
 
-Python 3.10–3.11 is supported. The primary command-line executable is `atlastailor`. The Python import namespace and legacy `hyperspatial` command remain available for compatibility with the frozen analyses.
+Python 3.10–3.11 is supported. The primary command-line executable is `atlastailor`; the Python import namespace and legacy `hyperspatial` command remain available for backward compatibility.
 
 ## Minimal Python workflow
 
-AtlasTailor separates prediction-time target input from held-out evaluation truth. The target loader below materializes only the 16 measured genes; the full matrix is opened separately only after the prediction run has been completed and hashed.
+This example designs a 16-gene panel from a reference atlas, reconstructs a target specimen and optionally evaluates the reconstruction when complete target measurements are available.
 
 ```python
 from hyperspatial import adapt, design_panel, validate
@@ -45,7 +42,7 @@ reference = read_reference("reference.h5ad", coordinate_key="spatial")
 # Select the measurement panel using the reference only
 panel = design_panel(reference, budget=16, out="runs/panel")
 
-# Load only target geometry and the declared measured genes
+# Load target geometry and the selected measurements
 target = read_target(
     "target.h5ad",
     measured_genes=panel.genes,
@@ -60,16 +57,16 @@ result = adapt(
     out="runs/adaptation",
 )
 
-# Optional retrospective evaluation, performed only after prediction lock
+# Optional evaluation with complete target measurements
 truth, _ = read_truth("target.h5ad", result.genes, coordinate_key="spatial")
 metrics = validate(result, truth, out="runs/adaptation/gene_metrics.tsv")
 ```
 
-The [documentation](https://atlastailor.readthedocs.io) explains the pipeline, input contract, API and scientific information boundary. 
+The [documentation](https://atlastailor.readthedocs.io) describes the pipeline, input formats and API.
 
 ## Run AtlasTailor on real data
 
-The end-to-end tutorials execute AtlasTailor on public biological datasets. They cover source-only panel design, restricted target loading, geometry-only registration, prediction locking and post-lock evaluation.
+The end-to-end tutorials execute AtlasTailor on public biological datasets and cover data preparation, 16-gene panel design, spatial registration, reconstruction and evaluation.
 
 | Tutorial | Dataset | Public record | Notebook |
 |---|---|---|---|
@@ -77,11 +74,11 @@ The end-to-end tutorials execute AtlasTailor on public biological datasets. They
 | 2D serial-section reconstruction | Human DLPFC Visium, 151507 → 151508 | [spatialLIBD / Figshare](https://doi.org/10.6084/m9.figshare.13623902.v1) | [Run the DLPFC tutorial](notebooks/00_run_atlastailor_dlpfc.ipynb) |
 | User dataset template | Prepared reference and target AnnData files | — | [Run AtlasTailor on your data](notebooks/04_run_atlastailor_on_your_data.ipynb) |
 
-The public datasets are not redistributed in this repository. Each tutorial identifies the authoritative record, verifies frozen input hashes where available, and writes new timestamped run directories without altering manuscript results.
+The public datasets are not redistributed in this repository. Each tutorial identifies the authoritative record, verifies published file checksums where available and writes results to a user-selected run directory.
 
 ## Command-line workflow
 
-AtlasTailor accepts reference and target AnnData objects with spatial coordinates in `obsm["spatial"]`. The target may be an anchor-only prospective file or a full retrospective matrix: prediction opens it in backed mode and materializes only the declared measured panel.
+AtlasTailor accepts reference and target AnnData objects with spatial coordinates in `obsm["spatial"]`. The target can contain the selected measurement panel or a complete matrix; the adaptation workflow reads the selected panel.
 
 ```bash
 atlastailor design \
@@ -103,25 +100,14 @@ See the [quickstart](docs/quickstart.md), [input contract](docs/data_formats.md)
 
 ```text
 src/hyperspatial/      installable implementation and CLI
-notebooks/             end-to-end real-data tutorials and frozen-results walkthroughs
-examples/              frozen real-data evidence used by notebooks
+notebooks/             end-to-end real-data tutorials and worked examples
+examples/              compact example tables used by notebooks
 data/                  dataset accessions and external-data policy
-preprocessing/         input preparation and information boundaries
-tests/                 software tests and internal CI fixtures
-docs/                  methods, API and scientific guardrails
+preprocessing/         input preparation utilities
+tests/                 software tests
+docs/                  methods, tutorials and API reference
 provenance/            software-release manifest and validation report
 ```
-
-## Scientific safeguards
-
-- Target molecular expression is excluded from geometry registration.
-- Anchor selection uses source information only.
-- Target non-anchor expression remains withheld until predictions are serialized and locked.
-- Predictor selection, calibration, and fallback use source validation rather than target outcomes.
-- Registered IDW predicts no atlas-relative correction; its residual correlation is undefined, not zero.
-- Spots and genes are evaluation units, not independent biological replicates.
-
-See [scientific guardrails](docs/scientific_guardrails.md) and [statistical units](docs/statistical_units.md).
 
 ## Citation and licence
 
