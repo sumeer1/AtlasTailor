@@ -79,18 +79,6 @@ The end-to-end tutorials execute AtlasTailor on public biological datasets. They
 
 The public datasets are not redistributed in this repository. Each tutorial identifies the authoritative record, verifies frozen input hashes where available, and writes new timestamped run directories without altering manuscript results.
 
-## Published-results walkthroughs
-
-The notebooks below inspect compact frozen results from the biological datasets reported in the manuscript. They do not fit the model or substitute for the end-to-end tutorials above.
-
-| Analysis | Biological system | Public record | Notebook |
-|---|---|---|---|
-| Reciprocal atlas adaptation | Zebrafish embryogenesis, 3D weMERFISH | [Dryad](https://doi.org/10.5061/dryad.j0zpc86v9) | [Figure 2 results](notebooks/10_figure2_benchmark_results.ipynb) |
-| Cross-platform atlas transfer | Human COAD and ovarian cancer; Visium HD → Xenium/CosMx | [SPATCH](https://spatch.pku-genomics.org) | [Cross-platform results](notebooks/11_cross_platform_benchmark_results.ipynb) |
-| Multi-disease atlas adaptation | Human MASLD, PSC and alcohol-associated hepatitis | [Dataset records](data/DATASETS.tsv) | [Liver disease results](notebooks/12_liver_disease_validation_results.ipynb) |
-
-Compact frozen evidence used by these walkthroughs is bundled under [`examples/`](examples/README.md). Provider-scale datasets remain available from their authoritative public records.
-
 ## Command-line workflow
 
 AtlasTailor accepts reference and target AnnData objects with spatial coordinates in `obsm["spatial"]`. The target may be an anchor-only prospective file or a full retrospective matrix: prediction opens it in backed mode and materializes only the declared measured panel.
