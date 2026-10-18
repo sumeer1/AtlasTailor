@@ -36,7 +36,6 @@ dependencies = [
 Homepage = "https://github.com/sumeer1/AtlasTailor"
 Documentation = "https://atlastailor.readthedocs.io"
 Repository = "https://github.com/sumeer1/AtlasTailor"
-"Reproducibility record" = "https://github.com/sumeer1/AtlasTailor-reproducibility"
 "Bug tracker" = "https://github.com/sumeer1/AtlasTailor/issues"
 
 [project.optional-dependencies]

@@ -8,5 +8,4 @@
 - Added source-only panel design, 2D/3D adaptation, residual exploration and MAP-T wrappers.
 - Added lightweight examples, tutorials, documentation and frozen-equivalence tests.
 
-This candidate is not the immutable manuscript archive. The corresponding reproducibility repository records the frozen manuscript workflows.
-
+This candidate is a reusable software release and is not an immutable manuscript archive.

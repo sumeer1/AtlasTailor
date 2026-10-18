@@ -1,6 +1,6 @@
 # External-artifact policy
 
-Git is used for code, compact result tables, configurations, manifests, documentation, and small CI fixtures. Raw data, protected data, large provider archives, model checkpoints, and manuscript-scale prediction arrays belong in their authoritative repository or a versioned archival bundle such as Zenodo. Generated manuscript source panels are maintained in the companion reproducibility repository.
+Git is used for code, compact result tables, configurations, manifests, documentation, and small CI fixtures. Raw data, protected data, large provider archives, model checkpoints, manuscript-scale prediction arrays, and final assembled figures remain outside this software repository and should be obtained from their authoritative record or a versioned archival bundle such as Zenodo.
 
 Each external artifact should have:
 

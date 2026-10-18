@@ -44,8 +44,8 @@ atlastailor adapt \
 atlastailor inspect-run adaptation_run
 ```
 
-The command-line interface enforces the same boundary. Use `atlastailor inspect-run adaptation_run` to inspect run status and provenance. The legacy `hyperspatial` executable remains an alias for reproducibility of frozen commands.
+The command-line interface enforces the same boundary. Use `atlastailor inspect-run adaptation_run` to inspect run status and provenance. The legacy `hyperspatial` executable remains an alias for compatibility with frozen commands.
 
 ## Real public datasets
 
-For an end-to-end biological run, use the [zebrafish weMERFISH tutorial](https://github.com/sumeer1/AtlasTailor/blob/main/notebooks/01_run_atlastailor_zebrafish.ipynb), the [human DLPFC Visium tutorial](https://github.com/sumeer1/AtlasTailor/blob/main/notebooks/00_run_atlastailor_dlpfc.ipynb), or the [user-data template](https://github.com/sumeer1/AtlasTailor/blob/main/notebooks/04_run_atlastailor_on_your_data.ipynb). The exact frozen manuscript workflows remain in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility).
+For an end-to-end biological run, use the [zebrafish weMERFISH tutorial](https://github.com/sumeer1/AtlasTailor/blob/main/notebooks/01_run_atlastailor_zebrafish.ipynb), the [human DLPFC Visium tutorial](https://github.com/sumeer1/AtlasTailor/blob/main/notebooks/00_run_atlastailor_dlpfc.ipynb), or the [user-data template](https://github.com/sumeer1/AtlasTailor/blob/main/notebooks/04_run_atlastailor_on_your_data.ipynb).

@@ -14,4 +14,4 @@ The provider-scale matrices remain outside Git under `data/external/`. Continuou
 
 The `10`–`12` notebooks read compact frozen evidence bundled under `examples/manuscript_evidence/`. They document reported results but do not fit AtlasTailor. These notebooks are executed in continuous integration.
 
-The exact manuscript-scale workflows and prediction locks are maintained in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility).
+Provider-scale inputs remain outside Git and are obtained from the public records listed in `data/DATASETS.tsv`.

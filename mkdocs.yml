@@ -35,7 +35,7 @@ nav:
       - Configuration: api/configuration.md
       - Components: api/components.md
       - Command line: cli.md
-  - Reproducibility:
+  - Project:
       - Repository scope: repository_scope.md
       - Architecture and provenance: tool_architecture.md
       - Figure provenance: figure_provenance.md

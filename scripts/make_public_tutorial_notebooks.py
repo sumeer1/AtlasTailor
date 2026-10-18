@@ -83,8 +83,7 @@ locking and post-lock evaluation.
 
 This is a **software tutorial**, not a reanalysis of the frozen Figure 5
 benchmark. The exact manuscript workflow, including its complete evaluation
-universe and prediction locks, remains in the companion reproducibility
-repository.""",
+universe and prediction locks, is outside this interactive tutorial.""",
     [
         markdown("""
 ## 1. Obtain the authoritative public inputs
@@ -144,8 +143,7 @@ pd.DataFrame(
         markdown("""
 ## 2. Prepare a source-defined tutorial gene universe
 
-The complete 33,538-gene analysis is intentionally retained in the
-reproducibility repository. To keep this interactive tutorial practical, we
+To keep this interactive tutorial practical, we
 select up to 2,000 variable genes using section 151507 only, restricted to
 genes available on section 151508. Target gene names are assay metadata; no
 target molecular values are used for selection. The prepared target matrix is
@@ -308,9 +306,8 @@ target. Both H5AD files are public on Dryad. AtlasTailor selects exactly 16
 genes from E1, registers geometry without target expression, freezes the E2
 prediction and opens E2 non-anchor expression only for evaluation.
 
-The notebook executes the reusable AtlasTailor API. The six-direction frozen
-manuscript analysis and its original prediction locks remain in the companion
-reproducibility repository.""",
+The notebook executes the reusable AtlasTailor API as a focused public-data
+example rather than rerunning every manuscript direction.""",
     [
         markdown("""
 ## 1. Download and verify the public data
@@ -398,8 +395,7 @@ assert result.manifest.data["target_nonanchor_access_before_prediction"] is Fals
 
 The target truth is opened only after the completed prediction manifest has
 been asserted. This evaluation is a fresh software tutorial run; manuscript
-numbers should be taken from the frozen results walkthrough and companion
-reproducibility repository.
+numbers should be taken from the bundled frozen results walkthrough.
 """),
         code(r'''
 truth, truth_coordinates = read_truth(TARGET, result.genes, coordinate_key="global_sphere")

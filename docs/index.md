@@ -32,4 +32,4 @@ The software is a thin, regression-tested interface over the frozen manuscript i
 
 Geometry registration does not receive target molecular measurements. Panel selection, predictor selection, calibration and fallback use source information. At prediction time the target loader materializes only the declared measured genes. Full target expression is accepted only by the separate post-lock validation workflow.
 
-The main software repository contains the reusable package and tutorials. Exact executed manuscript workflows, frozen configurations, prediction locks and source-panel provenance are maintained in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility).
+This repository contains the reusable package, real-data tutorials, compact published-results walkthroughs, dataset records and release validation material.

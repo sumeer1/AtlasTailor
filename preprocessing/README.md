@@ -1,6 +1,6 @@
 # Preprocessing boundary
 
-AtlasTailor expects a reference and sparse target in the documented AnnData contract; see [data formats](../docs/data_formats.md). Reusable checks belong in the package, while dataset-specific conversion and QC remain part of the manuscript reproducibility record.
+AtlasTailor expects a reference and sparse target in the documented AnnData contract; see [data formats](../docs/data_formats.md). Reusable checks belong in the package, while dataset-specific conversion and QC remain outside the generic software interface.
 
 The general sequence is:
 
@@ -13,4 +13,4 @@ The general sequence is:
 7. select anchors from source information only;
 8. export the target-anchor view separately from withheld target expression.
 
-Provider-specific manuscript workflows are not rewritten as generic software because doing so would obscure the code actually executed. Their byte-preserved snapshots, configurations, accessions, and run order are in the companion reproducibility repository. The small `export_spatiallibd_coordinates.R` helper serves only the public DLPFC software tutorial: it exports identifiers and geometry from the authoritative spatialLIBD object and is not presented as the frozen Figure 5 workflow.
+Provider-specific manuscript workflows are not rewritten as generic software because doing so would obscure the distinction between reusable interfaces and dataset-specific processing. The small `export_spatiallibd_coordinates.R` helper serves only the public DLPFC software tutorial: it exports identifiers and geometry from the authoritative spatialLIBD object and is not presented as the frozen Figure 5 workflow.

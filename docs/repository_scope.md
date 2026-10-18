@@ -1,10 +1,8 @@
 # Repository scope
 
-AtlasTailor uses two linked repositories with distinct responsibilities.
+This repository is focused on reusable AtlasTailor software and concise public examples.
 
-## This repository: reusable software
-
-Included:
+## Included
 
 - installable Python package and CLI;
 - reusable 2D/3D input and preprocessing contracts;
@@ -15,7 +13,7 @@ Included:
 - a compact frozen Figure 2 evidence walkthrough;
 - the final Figure 1 overview for orientation.
 
-Not included:
+## Not included
 
 - manuscript-scale provider data or prediction arrays;
 - the complete collection of frozen evidence tables;
@@ -23,8 +21,4 @@ Not included:
 - generated manuscript source panels;
 - final manual Inkscape assemblies.
 
-## Companion repository: manuscript reproducibility
-
-[AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility) preserves executed workflow snapshots, exact frozen configurations and locks, manuscript evidence tables, generated source-panel SVGs, dataset provenance, and integrity manifests.
-
-Keeping these layers separate makes the software repository approachable while retaining a complete, auditable computational record. The repositories are version-linked by Git commit identifiers and SHA-256 manifests.
+Keeping provider-scale datasets and manuscript assembly assets outside the software package makes installation and review concise. Public dataset records are listed under `data/`, and compact frozen summary tables used by the walkthrough notebooks are bundled under `examples/`.

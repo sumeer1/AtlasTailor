@@ -14,6 +14,6 @@ The reusable sequence is:
 8. expose only the declared target measurements during prediction;
 9. open hidden target expression only after prediction locking when retrospective validation is intended.
 
-Dataset-specific manuscript preprocessing is preserved in the companion reproducibility repository. The small DLPFC coordinate exporter in this repository supports the public software tutorial and is not presented as the frozen Figure 5 workflow.
+Dataset-specific manuscript preprocessing is not generalized as part of the reusable package. The small DLPFC coordinate exporter in this repository supports the public software tutorial and is not presented as the frozen Figure 5 workflow.
 
 See [data conventions](data_formats.md) for the exact AnnData contract and [scientific guardrails](scientific_guardrails.md) for prohibited information flow.

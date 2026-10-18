@@ -18,4 +18,4 @@ The `10`–`12` notebooks inspect compact frozen evidence for the zebrafish, cro
 
 ## Exact manuscript workflows
 
-The tutorials exercise the reusable interface. They are not substitutes for the exact manuscript computations. Executed workflow snapshots, prediction-lock manifests, complete frozen tables and generated source panels live in [AtlasTailor-reproducibility](https://github.com/sumeer1/AtlasTailor-reproducibility).
+The tutorials exercise the reusable interface and are not substitutes for the exact manuscript computations. Compact frozen summary tables used by the published-results walkthroughs are bundled under `examples/`.
