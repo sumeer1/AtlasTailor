@@ -9,10 +9,21 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import subprocess
 from pathlib import Path
 
 
-EXCLUDED_PARTS = {".git", ".pytest_cache", "__pycache__", "build", "dist", "site"}
+EXCLUDED_PARTS = {
+    ".git",
+    ".ipynb_checkpoints",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+    "site",
+}
 EXCLUDED_NAMES = {"SHA256SUMS.tsv", "RELEASE_VALIDATION.json"}
 
 
@@ -25,7 +36,25 @@ def sha256(path: Path) -> str:
 
 
 def included(path: Path) -> bool:
-    return path.name not in EXCLUDED_NAMES and not any(part in EXCLUDED_PARTS for part in path.parts)
+    return (
+        path.name not in EXCLUDED_NAMES
+        and not any(part in EXCLUDED_PARTS for part in path.parts)
+        and not any(part.endswith((".egg-info", ".dist-info")) for part in path.parts)
+    )
+
+
+def release_files(root: Path) -> list[Path]:
+    """Return version-controlled release files, with an archive fallback."""
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "ls-files", "-z"],
+            check=True,
+            capture_output=True,
+        )
+        paths = [root / item for item in result.stdout.decode().split("\0") if item]
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        paths = list(root.rglob("*"))
+    return sorted(path for path in paths if path.is_file() and included(path.relative_to(root)))
 
 
 def main() -> int:
@@ -37,7 +66,7 @@ def main() -> int:
     root = args.root.resolve()
     output = (args.output or root / "provenance" / "SHA256SUMS.tsv").resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
-    files = sorted(path for path in root.rglob("*") if path.is_file() and included(path.relative_to(root)))
+    files = release_files(root)
 
     lines = ["sha256\tbytes\tpath"]
     for path in files:
